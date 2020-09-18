@@ -1,0 +1,17 @@
+body{
+    background-color: #A3E;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#home-page{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header, footer {
+    background-color: rgb(43, 128, 134);
+    color: white;
+    border-radius: 10px;
+    padding: 9px;
+}
+
