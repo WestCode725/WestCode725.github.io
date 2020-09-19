@@ -1,5 +1,5 @@
 body{
-    background-color: #A3E;
+    background-color: #EEE;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -9,9 +9,47 @@ body{
 }
 
 header, footer {
-    background-color: rgb(43, 128, 134);
+    background-color: rgb(61, 152, 238);
     color: white;
     border-radius: 10px;
+    text-align: center;
+}
+
+header {
+    font-size: 130%;
     padding: 9px;
 }
 
+header h1 {
+    padding-right: 70px;
+}
+
+main {
+    padding: 0 15px 30px 15px;
+    color: #444;
+}
+
+main h3 {
+    border-bottom: 1.4px solid darkgray;
+    padding-bottom: 10px;
+}
+
+.Profile{
+    max-width: 20%;
+    float: right;
+    box-shadow: 0 0 10px black;
+    margin-top: -100px;
+}
+
+footer {
+    padding: 5px;
+}
+
+footer p{
+    margin-bottom: 9px;
+    font-size: 90%;
+}
+
+footer p.highlight {
+    color: yellow;
+}
