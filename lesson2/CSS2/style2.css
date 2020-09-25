@@ -1,3 +1,80 @@
-body{
-    
+
+
+@media only screen and (min-width: 600px) {
+   
+
+body {
+    margin: 0 auto;
+    background-color: #EDEDED;
+    max-width: 900px;
+}
+
+main {
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 19px;
+    justify-content: center;
+    align-content: center;
+}
+
+a, p {
+    font-family: Epilogue, sans-serif;
+    line-height: 150%;
+}
+
+h2 {
+    font-family: Ubuntu, Times New Roman, sans-serif;
+    font-size: 120%;
+    text-align: center;
+}
+
+main div {
+    border: 1px solid gray;
+    padding: 10px 20px 12px 20px;
+    background-color: white;
+    width: 270px;
+}
+
+img {
+    max-width: 250px;
+    border: 0.5px solid black;
+    margin-bottom: 16px;
+    margin-left: 10px;
+}
+
+.artForm {
+    border-bottom: 1.4px solid black;
+    padding-bottom: 6px;
+    color: #03a086;
+    font-size: 120%;
+}
+
+.webTitle {
+    padding-top: 21px;
+    text-align: center;
+}
+
+#principle3 {
+    max-height: 665px;
+}
+
+#principle2 {
+    max-height: 730px;
+}
+}
+
+
+@media only screen and (min-width: 500px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 250) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
