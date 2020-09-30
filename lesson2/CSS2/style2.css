@@ -58,18 +58,19 @@ img {
     max-height: 730px;
 }
 
-@media only screen and (max-width: 650) {
-    main {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-    }
-}
 
 
 @media only screen and (max-width: 800px) {
     main {
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
     }
 }

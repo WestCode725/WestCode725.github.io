@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 390px;
+    margin: 20px auto;
+    background-color: #cfcfcf;
+    box-shadow: 0px 0px 4px gray;
+    border-radius: 20px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1.7fr;
+    width: 100%;
+    background-color: white;
+    border-radius: 20px 20px 0 0;
+}
+
+.name {
+    grid-column: 4/5;
+    font-size: 11px;
+    text-align: center;
+    margin: -11px 10px 0 0;
+}
+
+.mobile {
+    grid-column: 1/2;
+    color: #1e4178a8;
+    font-size: 9px;
+    margin: -2px 0 13px 32px;
+}
+.delta-logo {
+    border-radius: 10px;
+    margin: 15px 0 4px 20px;
+}
+.airports {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center; 
+    align-items: center;
+    background-color: #001b36;
+    color: white;
+    padding: 14px;
+}
+
+.airports p{
+    color: #405b76;
+    font-size: 50%;
+}
+
+main .details{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;  
+    justify-items: center; 
+    align-items: center;
+    background-color: #f1f1f1; 
+}
+
+#bos{
+    grid-column: 3 ;
+    grid-row: 2;
+}
+
+#depart{
+    margin-bottom: -12px;
+}
+
+#den{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+#denver{
+    grid-column: 1 / 2;
+    grid-row: 0 / 1;
+    margin-top: -12px;
+}
+
+#boston{
+    grid-column: 3;
+    grid-row: 3;
+    margin-top: -12px;
+}
+
+#arrive{
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    margin-bottom: -12px;
+}
+
+#planelogo{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.details p{
+    margin-top: -20px;
+}
+
+.details h6{
+    font-size: 50%;
+    margin-bottom: 10px;
+}
+
+.details{
+    color: #001b36;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.bar-img{
+    background-color: white;
+    text-align: center;
+}
+
+#barimg{
+   padding: 10px
+}
+
+footer{
+    background-color: white;
+    border-radius: 0px 0px 20px 20px;
+    text-align: center;
+}
+
+footer p{
+    margin: 0;
+    padding-bottom: 25px;
+    font-size: 60%;
+    color: #405b76
+}
