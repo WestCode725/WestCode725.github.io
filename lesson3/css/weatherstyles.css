@@ -1,0 +1,67 @@
+body p{
+    font-family: 'Poppins', sans-serif;
+}
+
+body h1, body h2, body a{
+    font-family: 'Titillium Web', sans-serif;
+}
+
+body{
+    max-width: 990px;
+    margin: 0 auto;
+    background-color: #EEE;
+}
+
+.page{
+    background-color: #FFF;
+}
+
+main{
+    padding: 15px;
+}
+
+header{
+    background-color: #4ef7db;
+    color: #222;
+}
+
+header ul{
+    display: flex;
+    margin-left: 60px;
+    
+}
+
+header li{
+    list-style-type: none;
+    background-color: #;
+    max-width: 130px;
+    margin-right: 9px;
+}
+
+header a{
+    padding: 9px;
+    border: 1px solid black;
+    color: white;
+    background-color: rgba(211, 211, 211, 0.678);
+}
+
+#sitelogo{
+    max-width: 95px;
+    margin-right: 50px;
+    padding: 5px 0 0 5px;
+}
+
+.top{
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.nav{
+    display: flex;
+    padding: 5px 0px;
+    background-color: #0585c0;
+}
+
+.use{
+    margin-bottom: 50px;
+}
