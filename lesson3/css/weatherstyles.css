@@ -65,3 +65,15 @@ header a{
 .use{
     margin-bottom: 50px;
 }
+
+.typepage{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    align-items: center;
+}
+
+.typepage p, .typepage h1{
+    max-width: 210px;
+    border: .7px solid darkgray;
+}
