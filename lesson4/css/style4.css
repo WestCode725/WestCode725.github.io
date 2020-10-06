@@ -8,6 +8,32 @@ body{
 }
 
 header{
-    background-color: #4ef7db;
+    background-color: #4eb9f7;
     color: #222;
+    display: flex;
+    padding-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+header h1{
+    margin-left: 20px;
+}
+.navigation{
+    
+}
+
+.navigation li:first-child{
+    display: block;
+}
+
+.navigation li{
+    display: none;
+}
+
+.responsive li{
+    display: block;
+}
+
+header img{
+    max-width: 80px;
 }
