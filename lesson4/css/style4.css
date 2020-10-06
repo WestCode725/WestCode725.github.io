@@ -19,7 +19,8 @@ header h1{
     margin-left: 20px;
 }
 .navigation{
-    
+    list-style: none;
+
 }
 
 .navigation li:first-child{
@@ -27,7 +28,12 @@ header h1{
 }
 
 .navigation li{
-    display: none;
+    display: none; 
+}
+
+.navigation a{
+    padding: 8px;
+    
 }
 
 .responsive li{
@@ -36,4 +42,11 @@ header h1{
 
 header img{
     max-width: 80px;
+}
+
+main div{
+    padding: 10px;
+    border: 1px solid black;
+    margin: 10px;
+    background-color: lightgray;
 }
