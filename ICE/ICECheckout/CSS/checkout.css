@@ -21,8 +21,9 @@ body{
     
 }
 #checkout_details{
-    float: left;
+    width: 100%;
 }
+
 footer p {
     float: right;
 }
