@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <head>
     <title>ICE Boarding Pass</title>
     <meta charset="utf-8">
@@ -11,7 +12,7 @@
 
 <body>
     <header>
-        
+
     </header>
 
     <main>
@@ -19,17 +20,19 @@
             <div class="order_summary">
                 <img id="checkout_details" src="Images/progress-bar.jpg">
                 <h1>Order Summary</h1>
-                <p class="text">ORDER SUBTOTAL</p>
-                <p class="price">$ 46.95</p>
-                <p class="text">SHIPPING & HANDLING</p>
-                <p class="price">$ 6.00</p>
-                <p class="text">SALES TAX</p>
-                <p class="price">$ 8.05</p>
-                <p class="text">PAYMENT DUE</p>
-                <p class="price">$ 61.00</p>
-                <p id="return">Return to cart</p>
+                <div id="order-grid">
+                    <p class="text">ORDER SUBTOTAL</p>
+                    <p class="price">$ 46.95</p>
+                    <p class="text">SHIPPING & HANDLING</p>
+                    <p class="price">$ 6.00</p>
+                    <p class="text">SALES TAX</p>
+                    <p class="price">$ 8.05</p>
+                    <p class="text">PAYMENT DUE</p>
+                    <p class="price" id="total_amount">$ 61.00</p>
+                    <p class="link"><a href="#">Return to cart</a></p>
+                </div>
             </div>
-            
+
             <div class="payment_details">
                 <p id="visa">VISA</p>
                 <p id="paypal">PayPal</p>
@@ -37,17 +40,18 @@
                 <p class="payment_info">CARDHOLDER NAME</p>
                 <p>Alexis Johnson</p>
                 <p class="payment_info">CARD NUMBER</p>
-                <p class= "bold">1234 5678 9012 3456</p>
+                <p class="bold">1234 5678 9012 3456</p>
                 <p class="payment_info">EXPIRATION DATE</p>
-                <p class= "date">MONTH</p>
-                <p class= "bold">06</p>
-                <p class= "date">YEAR</p>
-                <p class= "bold">18</p>
+                <p class="date">MONTH</p>
+                <p class="bold">06</p>
+                <p class="date">YEAR</p>
+                <p class="bold">18</p>
                 <p class="payment_info">CVV</p>
                 <p class="payment_info">BILLING ADDRESS</p>
-                <p class= "bold">25 Bloor St E, Toronto, ON</p>
-                <p id= "shipping_address">Same as shipping address</p>
-                
+                <p class="bold">25 Bloor St E, Toronto, ON</p>
+                <input type="checkbox" id="shipping_address">Same as shipping address</input>
+                <button type="submit">NEXT</button>
+                <p class="link"><a href="#">Cancel</a></p>
 
             </div>
         </div>

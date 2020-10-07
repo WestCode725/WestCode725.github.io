@@ -2,22 +2,46 @@ body{
     
 }
 .order_summary{
-    background-color:#DDD;
+    background-color:#EDEDED;
 }
 
 .text{
-    color: lightgrey;
+    color: grey;
 }
 
 .payment_info{
-    color:lightgrey;
+    color:grey;
 }
 .bold{
     color: black;
 }
+.date{
+    color: grey;
+}
+
+#order-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    margin: 0 10px;
+}
+#total_amount{
+    color: blue;
+}
+
+.price{
+    text-align: right;
+}
+
+.order_summary h1{
+    text-align: center;
+    color: gray;
+}
 
 .grid-container {
-    display: grid;
+    display: block;
+    grid-gap: 50px;
     
 }
 #checkout_details{
@@ -27,8 +51,14 @@ body{
 footer p {
     float: right;
 }
+.link {
+    font-size: 10px;
+    text-decoration: none;
+}
 
-
+.payment_details h1{
+    text-align: center;
+}
 
 @media only screen and (min-width: 450px) {
 
