@@ -1,0 +1,39 @@
+body{
+    
+}
+.order_summary{
+    background-color:#DDD;
+}
+
+.text{
+    color: lightgrey;
+}
+
+.payment_info{
+    color:lightgrey;
+}
+.bold{
+    color: black;
+}
+
+.grid-container {
+    display: grid;
+    
+}
+#checkout_details{
+    float: left;
+}
+footer p {
+    float: right;
+}
+
+
+
+@media only screen and (min-width: 450px) {
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+    
+}
