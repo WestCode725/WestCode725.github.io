@@ -18,9 +18,9 @@ header{
 header h1{
     margin-left: 20px;
 }
+
 .navigation{
     list-style: none;
-
 }
 
 .navigation li:first-child{
