@@ -3,28 +3,54 @@ body{
     background-color: #DDD;
 }
 
-.page{
+body p, body a{
+    font-family: 'Poppins', serif;
+}
+
+h1, h2{
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.preston-page{
     background-color: #FFF;
 }
 
 header{
-    background-color: #4eb9f7;
+    background-image: url(../images/prestonview.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
     color: #222;
-    display: flex;
+    display: grid;
+    grid-template-columns: 110px 1fr;
     padding-bottom: 20px;
-    flex-wrap: wrap;
 }
 
 header h1{
     margin-left: 20px;
 }
 
+header img{
+    grid-row: 1 / 3;
+    max-width: 90px;
+    margin: 10px 0 0 10px;
+}
+
+header p{
+    text-align: center;
+    background-color: rgba(95, 95, 95, .66);
+    color: white;
+}
+
 .navigation{
     list-style: none;
+    padding: 0;
+    margin: 4px 0;
 }
 
 .navigation li:first-child{
     display: block;
+    text-align: center;
+    padding: 5px;
 }
 
 .navigation li{
@@ -32,16 +58,29 @@ header h1{
 }
 
 .navigation a{
-    padding: 8px;
-    
+   padding: 8px; 
+   display: block;
+   text-decoration: none;
+}
+
+.navigation a:visited{
+    color: #333;
 }
 
 .responsive li{
     display: block;
+    padding: 8px;
+    text-align: center;
+    background-color: #75ADE1;
+    border: 1px solid #3D3D3D;
 }
 
-header img{
-    max-width: 80px;
+.navigation li:first-child a:hover{
+    color: #666;
+}
+
+.responsive li:first-child{
+    background-color: #EEE;
 }
 
 main div{
@@ -49,4 +88,25 @@ main div{
     border: 1px solid black;
     margin: 10px;
     background-color: lightgray;
+
 }
+
+main h2{
+    width: 100%;
+    border-top: 1px solid black;
+    padding-top: 14px;
+    margin-top: 0;
+}
+
+
+@media only screen and (min-width: 500px){
+    .navigation:first-child{
+        display: none;
+    }
+    
+    .navigation {
+        display: flex;
+    }
+
+    
+} 
