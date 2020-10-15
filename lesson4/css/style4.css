@@ -69,6 +69,7 @@ header p{
    padding: 8px; 
    display: block;
    text-decoration: none;
+   color: #333;
 }
 
 .navigation a:visited{
