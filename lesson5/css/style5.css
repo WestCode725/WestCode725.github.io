@@ -1,13 +1,14 @@
 body{
     margin: 0 auto;
     background-color: #DDD;
+    max-width: 100%;
 }
 
 body p, body a{
     font-family: 'Poppins', serif;
 }
 
-h1, h2{
+h1, h2, h3, h4, h5{
     font-family: 'Titillium Web', sans-serif;
 }
 
@@ -48,6 +49,11 @@ header p{
     color: white;
     margin-right: 20px;
 }
+
+
+/*        navigation section 
+
+*/
 
 .navigation{
     list-style: none;
@@ -98,11 +104,13 @@ header p{
 }
 
 main div{
-    padding: 10px;
-    border: 1px solid black;
-    margin: 10px;
-    background-color: lightgray;
 
+
+}
+
+main h3{
+    margin: 150px auto 15px auto;
+    text-align: center;
 }
 
 main h2{
@@ -112,16 +120,118 @@ main h2{
     margin-top: 0;
 }
 
-.weathersumm{
-    width: auto;
+#preston-heading{
+    padding-left: 20px;
 }
+
+.heroweathersumm{
+    width: auto;
+    position: relative;
+}
+
+#weathersumm{
+    margin: 0 auto;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    border: 1px solid black;
+    padding: 8px;
+    background-color: #ececec;
+    opacity: 68%;
+    height: 100%;
+}
+
+#desc{
+    font-size: 100%;
+    max-width: 90%;
+}
+
+#weathersumm h4{
+    margin-top: 5px;
+}
+
+#weather-current{
+    font-size: 170%;
+}
+
 
 #hero-img{
     max-width: 100%;
+    background-color:;
+}
+
+/*        5 day forecast     
+*/
+#fivedaylayout{
+    display: block;
+    text-align: center;
+    justify-content: center;
+}
+
+.detailgrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 40%;
+    margin: 19px auto 0 auto;    
 }
 
 
-@media only screen and (min-width: 600px){
+.day{
+    border: 1px solid black;
+    margin: 10px 15px;
+    padding-bottom: 10px;
+}
+
+#day1{
+    background-image: linear-gradient(to bottom right, white, rgb(204, 253, 253));
+}
+
+#day2{
+    background-image: linear-gradient(to bottom right, white, rgb(146, 146, 146));
+}
+
+#day3{
+    background-image: linear-gradient(to bottom right, white, rgb(204, 253, 253));
+}
+
+#day4{
+    background-image: linear-gradient(to bottom right, white, rgb(204, 253, 253));
+}
+
+#day5{
+    background-image: linear-gradient(to bottom right, white, rgb(146, 146, 146));
+}
+
+
+.day img{
+    width: 80px;
+}
+
+.dayofweek{
+    font-weight: 800;
+}
+
+.hilo{
+    font-size: 160%;
+}
+
+#article{
+    display: grid;
+    grid-template-columns: 1fr 20%;
+    grid-template-rows: 35% 1fr;
+    height: max-content;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 90%;
+    margin: 80px auto 0 auto;
+}
+
+#article img{
+    max-width: 100%;
+}
+
+@media only screen and (min-width: 690px){
     
     main h2{
         border: 0;
@@ -139,5 +249,48 @@ main h2{
         display: ;
     }
 
+    #weathersumm{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 90%;
+        border: none;
+        background-color: rgba(0,137,252,0);
+        top: 10%;
+        left: 5%;
+        padding: 8px;
+        color: white;
+        font-size: 2.5vw;
+        height: 80%;
+    }
 
+   
+
+    #desc{
+        font-size: 120%;
+        background-color: rgba(100,100,100,.9);
+        padding: 12px;
+        height: max-content;
+
+    }
+
+    #fivedaylayout{
+        display: flex;
+        width: 100%;
+    }
+
+    .detailgrid{
+        width: auto;
+        height: max-content;
+    }
+
+    .detailgrid p{
+        margin-top: 0px;
+        line-height: 0;
+    }
+
+    .day{
+        width: 20%;
+        align-self: stretch;
+        padding: 9px;
+    }
 } 

@@ -35,6 +35,10 @@ main h3 {
     padding-bottom: 10px;
 }
 
+main ul li{
+    padding-bottom: 8px;
+}
+
 .Profile{
     max-width: 20%;
     float: right;
