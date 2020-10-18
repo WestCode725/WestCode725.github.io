@@ -1,7 +1,7 @@
 body{
     margin: 0 auto;
     background-color: #DDD;
-    max-width: 100%;
+    width: 100%;
 }
 
 body p, body a{
@@ -213,6 +213,11 @@ main h2{
 
 .hilo{
     font-size: 160%;
+    margin: 0;
+}
+
+.sun{
+    font-size: small;
 }
 
 #article{
@@ -229,6 +234,43 @@ main h2{
 
 #article img{
     max-width: 100%;
+}
+
+
+/*        footer section
+*/
+
+#footer {
+    
+    grid-column: 1 / -1;
+    padding: 5px;
+    text-align: center;
+}
+
+#footer p{
+    margin-bottom: 9px;
+    font-size: 90%;
+    text-align: center;
+}
+
+.legal{
+    padding-top: 30px;
+}
+
+#footer p.highlight {
+    color: maroon;
+}
+
+
+#contact{
+    background-color: #DEDEDE;
+    padding: 19px;
+}
+
+#map{
+    height: 200px;
+    width: 300px;
+    border: 1px solid black;
 }
 
 @media only screen and (min-width: 690px){
@@ -293,4 +335,17 @@ main h2{
         align-self: stretch;
         padding: 9px;
     }
+
+    #contact{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 30px auto;
+    }
+
+    #map{
+        grid-column: 2;
+        grid-row: 1 / -1;
+    
+    }
+
 } 
