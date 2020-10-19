@@ -16,6 +16,13 @@ h1, h2, h3, h4, h5{
     background-color: #FFF;
 }
 
+.banner{
+    text-align: center;
+    background-color: khaki;
+    margin: 0;
+    padding: 10px;
+}
+
 header{
     background: rgb(167,216,254);
     background: linear-gradient(90deg, rgba(167,216,254,1) 1%, rgba(0,137,252,1) 46%, rgba(45,101,251,1) 98%);
