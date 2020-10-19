@@ -280,16 +280,14 @@ main h2{
 
     .navigation {
         display: flex;
-        
     }
 
     .navigation li{
         display: block;
-        flex: 1 1 auto;
     }
     
-    .menubutton{
-        display: none!important;
+    .navigation:first-child{
+        display: ;
     }
 
     #weathersumm{
