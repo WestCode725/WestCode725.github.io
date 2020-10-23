@@ -39,6 +39,20 @@ main ul li{
     padding-bottom: 8px;
 }
 
+main li a{
+    color: #444;
+}
+
+main li a:visited{
+    color: #444;
+}
+
+main li a:hover{
+    color: #000;
+    font-weight: 800;
+}
+
+
 .Profile{
     max-width: 20%;
     float: right;
@@ -51,6 +65,7 @@ footer {
 }
 
 footer p{
+    font-family: "Kumb Sans", Helvetica;
     margin-bottom: 9px;
     font-size: 90%;
 }
