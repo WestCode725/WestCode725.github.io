@@ -1,6 +1,5 @@
 body{
     background-color: #EEE;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 #home-page{
@@ -22,12 +21,13 @@ header {
 
 header h1 {
     padding-right: 70px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 main {
     padding: 0 15px 30px 15px;
     color: #444;
-    font-family: Kumbh Sans, Helvetica, sans-serif;
+    font-family: "Kumbh Sans", Helvetica, sans-serif;
 }
 
 main h3 {

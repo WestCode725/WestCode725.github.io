@@ -137,11 +137,25 @@ main h2{
     height: 99%;
 }
 
-#desc{
+.desc{
     font-size: 100%;
     max-width: 90%;
+    justify-items: center;
+    width: fit-content;
+    padding-right: 120px;
 }
 
+.desc p{
+    margin: 8px 0;
+}
+
+#windinfo{
+    grid-row: 4;
+    grid-column: 1/4;
+}
+
+
+/*weather summary    */
 #weathersumm h4{
     margin-top: 5px;
 }
@@ -280,14 +294,16 @@ main h2{
 
     .navigation {
         display: flex;
+        
     }
 
     .navigation li{
         display: block;
+        flex: 1 1 auto;
     }
     
-    .navigation:first-child{
-        display: ;
+    .menubutton{
+        display: none!important;
     }
 
     #weathersumm{
@@ -306,7 +322,7 @@ main h2{
 
    
 
-    #desc{
+    .desc{
         font-size: 120%;
         background-color: rgba(100,100,100,.9);
         padding: 12px;

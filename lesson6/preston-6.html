@@ -40,12 +40,22 @@
         <main>
             <h2 id="preston-heading">Preston Idaho</h2>
             <div class="heroweathersumm">
-                <img src="images/preston_mountain.jpg" id="hero-img">
+                <picture id="hero-img" >
+                    <source srcset="images/" media="(max-width: 450px)">
+
+                    
+                </picture>
                 <section id="weathersumm">
-                    <p id="weather-current">&#9728;&#65039; 57&#176; Sunny</p>
-                    <p id="desc">Today will have mostly sunny skies with a high of 64&#176;F. Tonight expect a chance of
-                        showers and a low of
-                        41&#176; F.</p>
+                    <p id="weather-current">&#9728;&#65039; 62&#176; Sunny</p>
+                    <div class="desc">
+                        <p id="curr"> Currently: Sunny</p>
+                        <p id="high">High: <span id="hightemp">48</span>&#176; F</p>
+                        <p id="low">Low: 41&#176; F</p>
+                        <p id="windinfo">Wind: ENE <span id="windspeed">15</span>mph</p>
+                        <p id="feels">Feels like: <span id="windchill"></span>&#176; F</p>          
+                    </div>
+                   
+                    
                 </section>
             </div>
 
