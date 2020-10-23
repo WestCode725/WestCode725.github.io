@@ -10,8 +10,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style6.css">
     <script src="js/preston-6.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Titillium+Web&display=swap"
-        rel="stylesheet">
+    
 </head>
 
 <body>
@@ -37,15 +36,17 @@
             </ul>
         </nav>
 
-        <main> 
+        <main>
             <h2 id="preston-heading">Preston Idaho</h2>
             <div class="heroweathersumm">
+
+
+
                 <picture id="hero-img">
-                    <source srcset="images/franklinsmall" media="(max-width: 449px)" type="image/jpeg">
-                    <source srcset="images/franklinmedium.jpeg" media="(min-width: 450px) and (max-width: 699px)">
-                    <source srcset="images/franklinOriginal.jpeg" media="(min-width: 700px)">
+                    <source src="images/franklinsmall.jpeg" media="(max-width: 449px)" type="image/jpeg">
+                    <source src="images/franklinmedium.jpeg" media="(min-width: 450px) and (max-width: 699px)">
+                    <source src="images/franklinOriginal.jpeg" media="(min-width: 700px)">
                 </picture>
-                
 
                 <section id="weathersumm">
                     <p id="weather-current">&#9728;&#65039; 62&#176; Sunny</p>
@@ -54,10 +55,10 @@
                         <p id="high">High: <span id="hightemp">48</span>&#176; F</p>
                         <p id="low">Low: 41&#176; F</p>
                         <p id="windinfo">Wind: ENE <span id="windspeed">15</span>mph</p>
-                        <p id="feels">Feels like: <span id="windchill"></span>&#176; F</p>          
+                        <p id="feels">Feels like: <span id="windchill"></span>&#176; F</p>
                     </div>
-                   
-                    
+
+
                 </section>
             </div>
 
@@ -142,15 +143,15 @@
             <div id="article">
                 <h4>Roads shut down on Rte 34</h4>
                 <div id="story">
-                <img src="images/noroads.jpg">
-                <p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamcoet dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco consectetur adipiscing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation.</em></p>
-            </div>
-                
+                    <img src="images/noroads.jpg">
+                    <p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamcoet dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation.</em></p>
+                </div>
+
 
             </div>
 
@@ -169,4 +170,16 @@
         </main>
 
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Poppins', 'Tillium Web'
+                ]
+            }
+        });
+    </script>
 </body>
