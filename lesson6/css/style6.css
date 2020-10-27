@@ -162,7 +162,7 @@ main h2{
 
 
 #hero-img{
-    max-width: 100%
+    width: 100%;
 }
 
 /*        5 day forecast     
@@ -359,4 +359,46 @@ main h2{
     
     }
 
+    #largeimg{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 5%;
+        color: white;
+        font-weight: 600;
+    }
+
+    #smallimg, #medimg{
+        display: none;
+    }
 } 
+
+@media only screen and (max-width: 449px){
+    #largeimg, #medimg{
+        display: none;
+    }
+
+    #smallimg{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 5%;
+        color: white;
+        font-weight: 600;
+    }
+}
+
+@media only screen and (max-width: 689px) and (min-width: 450px){
+    #smallimg, #largeimg{
+        display: none;
+    }
+
+    #medimg{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 5%;
+        color: white;
+        font-weight: 600;
+    }
+}

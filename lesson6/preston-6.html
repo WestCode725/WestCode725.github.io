@@ -42,10 +42,14 @@
 
 
 
-                <picture id="hero-img">
-                    <source src="images/franklinsmall.jpeg" media="(max-width: 449px)" type="image/jpeg">
-                    <source src="images/franklinmedium.jpeg" media="(min-width: 450px) and (max-width: 699px)">
-                    <source src="images/franklinOriginal.jpeg" media="(min-width: 700px)">
+                <picture >
+                    <source srcset="images/franklinsmall.jpeg" media="(max-width: 449px)" type="image/jpeg" >
+                        <p id="smallimg">Small</p>
+                    <source srcset="images/franklinmedium.jpeg" media="(min-width: 450px) and (max-width: 689px)">
+                        <p id="medimg">Medium</p>
+                    <source srcset="images/franklinOriginal.jpeg" media="(min-width: 690px)">
+                        <p id="largeimg">Large</p>
+                    <img src="images/franklinOriginal.jpeg" id="hero-img">
                 </picture>
 
                 <section id="weathersumm">
