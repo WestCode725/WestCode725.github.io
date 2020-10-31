@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather Gallery</title>
+    <meta name="description" content="gallery practice">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style7.css">
+    <script src="js/weathergallery.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <h1 id="myName">Weather Weekly</h1>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" class="menubutton">&#9776; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="../lesson6/preston-6.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a id="gall" href="#">Gallery</a></li>
+        </ul>
+    </nav>
+
+
+    <main>
+        <h1>Weather Gallery</h1>
+        <div id="weather-grid">
+            <div class="weatherimg">
+                <img src="images/snow.jpg" loading="lazy" alt="snow fall">
+                <p>Snow falls on the road</p>
+            </div>
+
+            <div class="weatherimg">
+                <img src="images/windy.jpg" loading="lazy" alt="wind blown trees">
+                <p>Windy conditions in this field</p>
+            </div>
+
+            <div class="weatherimg">
+                <img src="images/rain.jpg" loading="lazy" alt="rain">
+                <p>heavy rainfall in the afternoon</p>
+            </div>
+
+            <div class="weatherimg">
+                <img src="images/LIghtning.jpg" loading="lazy" alt="lighning">
+                <p>Lightning strike</p>
+            </div>
+
+            <div class="weatherimg">
+                <img src="images/fall.jpg" loading="lazy" alt="fall picture">
+                <p>Fall time in the park</p>
+            </div>
+
+            <div class="weatherimg">
+                <img src="images/icyroads.jpg" loading="lazy" alt=alt="icy road">
+                <p>Road is covered with ice</p>
+            </div>
+
+            <div class="weatherimg">
+                <img src="images/spring.jpg" loading="lazy" alt=alt="spring picture">
+                <p>Cherry Blossoms blooming in Spring</p>
+            </div>
+
+            <div class="weatherimg">
+                <img src="images/sunnydays.jpg" loading="lazy" alt= alt="sunny day">
+                <p>A nice sunny day with some trees</p>
+            </div>
+
+            <div class="weatherimg">
+                <img src="images/tornado.jpg" loading="lazy" alt="tornado">
+                <p>A tornado in the field</p>
+            </div>
+
+
+        </div>
+
+        <div id="footer">
+            <p class="legal">&copy; <span id="copyrightyear"></span> | Weston Goodell | Idaho | <a
+                    href="https://www.byui.edu/online">BYUI Online Learning</a></p>
+            <p class="highlight">Last Updated: <span id="lastUpdated"></span></p>
+        </div>
+
+    </main>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Poppins', 'Tillium Web'
+                ]
+            }
+        });
+    </script>
+</body>
+
+</html>

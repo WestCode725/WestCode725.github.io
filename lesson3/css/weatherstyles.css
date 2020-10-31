@@ -7,17 +7,12 @@ body h1, body h2, body a, container{
 }
 
 body{
-    max-width: 990px;
-    margin: 0 auto;
     background-color: #EEE;
 }
 
-.page{
-    background-color: #FFF;
-}
-
 main{
-    padding: 15px;
+    width: 80%;
+    margin: 0 auto;
 }
 
 header{
@@ -176,8 +171,46 @@ header a{
     background-color: #DECFD4;
 }
 
+#purpose{
+    margin-bottom: 60px;
+}
 
-@media only screen and (max-width: 560px){
+footer {
+    padding: 5px;
+    background-color: rgb(61, 152, 238);
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+    margin: 20px auto;
+}
+
+footer p{
+    font-family: "Kumb Sans", Helvetica;
+    margin-bottom: 9px;
+    font-size: 90%;
+}
+
+footer p.highlight {
+    color: yellow;
+}
+
+
+
+@media only screen and (min-width: 550px) and (max-width: 850px){
+    .personas{
+        display: block;
+    }
+
+    .top{
+        display: block;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 549px){
     .personas{
         display: block;
     }
@@ -203,5 +236,11 @@ header a{
 
     .top{
         display: block;
+    }
+
+    footer{
+        width: 100%;
+        border-radius: 0px;
+        margin-bottom: 0;
     }
 }
