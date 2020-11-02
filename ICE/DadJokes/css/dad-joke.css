@@ -1,0 +1,9 @@
+.dad-bg{
+    background: url(../Images/dad-jokes-bg.jpg) no-repeat;
+    width: 700px;
+    height: 700px;
+    margin: 0 auto;
+    font-family: 'Coming Soon', cursive;
+    display: grid;
+    grid-template-columns: 300px;
+}
