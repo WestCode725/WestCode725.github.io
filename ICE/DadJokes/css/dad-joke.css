@@ -7,3 +7,13 @@
     display: grid;
     grid-template-columns: 300px;
 }
+
+#dad-joke{
+    align-self: center;
+    font-size: 45px;
+    padding-left: 50px;
+}
+
+#dad-joke.small{
+    font-size: 35px;
+}
