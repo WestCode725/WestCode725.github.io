@@ -1,0 +1,41 @@
+table{
+    border-collapse: collapse;
+    font-family: sans-serif;
+}
+
+.head{
+    background-color: #c7d3e0;
+}
+
+.head th{
+    padding: 11px;
+}
+
+.date{
+    font-size: small;
+    color: gray;
+}
+
+.profile-pic img{
+    max-width: 35px;
+    border-radius: 18px 18px;
+}
+
+tr td{
+    padding: 14px;
+}
+
+tbody tr:nth-child(even){
+    background-color: #EEE;
+}
+
+tbody tr:nth-child(n + 2):hover {
+    background-color: #cbf5ff;
+}
+.active {
+    background-color: #c8ffe2;
+}
+
+.edit{
+    color: gray;
+}

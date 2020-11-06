@@ -1,3 +1,3 @@
-funciton adjustRating(rating){
+function adjustRating(rating){
     document.getElementById("rating").innerHTML = rating;
 }
