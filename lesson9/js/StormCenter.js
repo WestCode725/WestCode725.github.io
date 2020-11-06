@@ -5,5 +5,5 @@ function adjustRating(rating){
 submitted = document.getElementById("submit");
 
 function thanks(){
-    location.replace()
+    location.replace("https://westcode725.github.io/lesson9/thanks.html");
 }
