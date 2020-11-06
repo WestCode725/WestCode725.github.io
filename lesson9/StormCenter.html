@@ -37,7 +37,7 @@
 
         <main>
 
-            <form>
+            <form action="thanks.html">
                 <h3 class="section">Personal Information</h3>
                 <div id="personalsec">
                     <div class="form-box">
@@ -79,7 +79,7 @@
 
                 <div class="form-box2">
                     <label for="sd">Storm Date</label>
-                    <input type="date" name="date" id="sd">
+                    <input type="date" required name="date" id="sd">
                 </div>
 
                 <div class="form-box2">
@@ -120,7 +120,7 @@
 
                 <div class="form-box2">
                     <label for="region">Storm Region</label>
-                    <select id="region" name="region">
+                    <select id="region" required name="region">
                         <option disabled selected value="disabled">Select Region</option>
                         <option value="preston">Preston</option>
                         <option value="sodaprings">Soda Springs</option>
@@ -131,7 +131,7 @@
 
                 <div class="form-box2">
                     <h4>Are you in danger?</h4>
-                    <label class="dangerclass" for="yes"><input type="radio" name="danger" id="yes">
+                    <label class="dangerclass" for="yes"><input required type="radio" name="danger" id="yes">
                         &nbsp;&nbsp;Yes</label>
                     <label class="dangerclass" for="maybe"><input type="radio" name="danger" id="maybe">
                         &nbsp;&nbsp;Maybe</label>
@@ -144,7 +144,7 @@
                     <textarea name="addcomments" placeholder="Additional Comments" rows="6"></textarea>
                 </div>
 
-                <button id="submit" onclick="Thanks()" type="submit">Submit</button>
+                <input id="submit" value="Submit" type="submit">
             </form>
 
 
