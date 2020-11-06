@@ -229,6 +229,10 @@ textarea{
     background-color: #B2BAE2;
 }
 
+#thanks{
+    text-align: center;
+}
+
 @media only screen and (min-width: 420px){
     #personalsec label{
         display: block;

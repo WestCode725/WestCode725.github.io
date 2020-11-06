@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Preston Town Page</title>
+    <title>Storm Center</title>
     <link rel="shortcut icon" href="images/WW.ico">
     <meta name="description" content="The weather and news for Preston Idaho">
     <link rel="stylesheet" href="css/normalize.css">
@@ -42,36 +42,35 @@
                 <div id="personalsec">
                     <div class="form-box">
                         <label for="fName">First Name</label>
-                        <input type="text" required id="fName" name="fName" placeholder="First Name" minlength="5"
-                            pattern="[A-Za-z]">
+                        <input type="text" required id="fName" name="fName" placeholder="First Name"
+                            pattern="[A-Za-z]{5,}">
                     </div>
 
                     <div class="form-box">
                         <label for="mName">Middle Name</label>
-                        <input type="text" required id="mName" name="mName" placeholder="Middle Name" minlength="5"
-                            pattern="[A-Za-z]">
+                        <input type="text" id="mName" name="mName" placeholder="Middle Name" minlength="5"
+                            pattern="[A-Za-z]{5,}">
                     </div>
 
                     <div class="form-box">
                         <label for="lName">Last Name</label>
                         <input type="text" required id="lName" name="lName" placeholder="Last Name" minlength="5"
-                            pattern="[A-Za-z]">
+                            pattern="[A-Za-z]{5,}">
                     </div>
 
                     <div class="form-box">
                         <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" minlength="5" placeholder="Email Address"
-                            pattern="[A-Za-z]">
+                        <input type="email" id="email" name="email" minlength="5" placeholder="Email Address">
                     </div>
 
                     <div class="form-box">
                         <label for="telnum">Phone Number</label>
-                        <input type="tel" required id="telnum" minlength="5" placeholder="Phone Number" pattern="[0-9]">
+                        <input type="tel" required id="telnum" name="phonenumber" minlength="5" placeholder="Phone Number">
                     </div>
 
                     <div class="form-box">
                         <label for="zip">Zip Code</label>
-                        <input type="number" required id="zip" minlength="5" placeholder="Zip Code" maxlength="5"
+                        <input type="number" required id="zip" minlength="5" name="zip" placeholder="Zip Code" maxlength="5"
                             pattern="[0-9]">
                     </div>
                 </div>
@@ -80,12 +79,12 @@
 
                 <div class="form-box2">
                     <label for="sd">Storm Date</label>
-                    <input type="date" id="sd">
+                    <input type="date" name="date" id="sd">
                 </div>
 
                 <div class="form-box2">
                     <label for="st">Storm Type</label>
-                    <input type="text" required id="st" list="stl">
+                    <input type="text" name="stormtype" required id="st" list="stl">
 
                     <datalist id="stl">
                         <option>Hurricane</option>
@@ -99,7 +98,7 @@
 
                 <div class="form-box2">
                     <label id="stormsev" for="severe">Storm Severity&nbsp;&nbsp;
-                        <input type="range" id="severe" min="1" max="10" value="1" list="tickmarks" step="1"
+                        <input type="range" id="severe" name="severity" min="1" max="10" value="1" list="tickmarks" step="1"
                             oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                     </label>
                     <span id="rating">&nbsp;&nbsp;&nbsp;1</span>
@@ -142,10 +141,10 @@
 
 
                 <div class="form-box2">
-                    <textarea name="comments" placeholder="Additional Comments" rows="6"></textarea>
+                    <textarea name="addcomments" placeholder="Additional Comments" rows="6"></textarea>
                 </div>
 
-                <button id="submit">Submit</button>
+                <button id="submit" onclick="Thanks()" type="submit">Submit</button>
             </form>
 
 
