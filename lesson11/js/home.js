@@ -1,3 +1,14 @@
+window.addEventListener('load', (event) => {
+
+    const hamburger = document.querySelector('.menubutton');
+    const homenav = document.querySelector('.navigation');
+
+    hamburger.addEventListener('click', () => {
+        homenav.classList.toggle('responsive')
+    }, false);
+});
+
+
 const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 
 fetch(requestURL)
@@ -10,14 +21,15 @@ fetch(requestURL)
         let threetowns = [1,4,5];
     
         for (i of threetowns) {
-            let town = document.createElement('section');
-            let h2 = document.createElement('h2');
-            let p1 = document.createElement('p');
-            let p2 = document.createElement('p');
-            let p3 = document.createElement('p');
-            let p4 = document.createElement('p');
-            let picture = document.createElement('img');
+            var town = document.createElement('section');
+            var h2 = document.createElement('h2');
+            var p1 = document.createElement('p');
+            var p2 = document.createElement('p');
+            var p3 = document.createElement('p');
+            var p4 = document.createElement('p');
+            var picture = document.createElement('img');
             
+            town.id = "townName" + i;
             h2.textContent = towns[i].name;
             p1.textContent = towns[i].motto;
             p2.textContent = "Year founded: " + towns[i].yearFounded; 
@@ -35,6 +47,37 @@ fetch(requestURL)
             town.appendChild(picture);
 
             document.querySelector('div.towns').appendChild(town);
+            
+        
         }
 
+        window.addEventListener('load', (event) => {
+
+            const fish = document.querySelector('#townName1');
+        
+            fish.addEventListener('click', () => {
+                fish.classList.toggle('editable')
+            }, false);
+        });
+
+
+        window.addEventListener('load', (event) => {
+
+            const fish = document.querySelector('#townName4');
+        
+            fish.addEventListener('click', () => {
+                fish.classList.toggle('editable')
+            }, false);
+        });
+
+
+        window.addEventListener('load', (event) => {
+
+            const fish = document.querySelector('#townName5');
+        
+            fish.addEventListener('click', () => {
+                fish.classList.toggle('editable')
+            }, false);
+        });
+        
     })
