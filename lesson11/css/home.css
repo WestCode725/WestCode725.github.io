@@ -112,6 +112,7 @@ header p{
 img{
     width: 100%;
     max-width: 300px;
+    margin: 0 auto;
 }
 
 section{
@@ -121,7 +122,7 @@ section{
     padding: 20px;
     margin: 20px auto;
     text-align: center;
-    background-image: linear-gradient(#FFD4CA, #FACFBF,#F2C1BA ); 
+    background-image: linear-gradient(#ff9494,#ff94AD ); 
 }
 
 main h2{
@@ -164,7 +165,7 @@ textarea{
 
 
 
-@media only screen and (min-width: 500px) and (max-width: 689px){
+@media only screen and (min-width: 600px) and (max-width: 689px){
     .towns{
         display: grid;
         grid-template-columns: 1fr;
@@ -172,69 +173,29 @@ textarea{
         gap: 20px;
     }
 
-    .towns p, .towns img{
-        display: block;
-        margin: 0;
+    section div{
+        padding: 20px;
+    }
+
+    div h2, div p, div img{
+        display: flex;
+        justify-content: center;
     }
 
     section{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 60px 45px 25px 25px 25px;
-        margin: 10px auto;
+        display: flex;
     }
 
-    #townName1 p:nth-child(3){
-        grid-column: 1;
-        grid-row: 3;
+    section:nth-child(odd){
+        flex-direction: row-reverse;
     }
-    #townName1 p:nth-child(2){
-        grid-column: 1;
-    }
-    
-    #townName1 p:nth-child(4){
-        grid-column: 1;
-    }
-
-    #townName1 p:nth-child(5){
-        grid-column: 1;
-    }
-    
-    #townName1 h2{
-        grid-row: 1;
-    
-    }
-
-    #townName4 p:nth-child(3){
-        grid-column: 2;
-        grid-row: 3;
-    }
-    #townName4 p:nth-child(2){
-        grid-column: 2;
-    }
-    
-    #townName4 p:nth-child(4){
-        grid-column: 2;
-    }
-
-    #townName4 p:nth-child(5){
-        grid-column: 2;
-    }
-    
-    #townName4 h2{
-        grid-row: 1;
-    }
-
-    #townName4 img{
-        grid-column: 1;
-    }
-
-
 
     section img{
-        grid-column: 2;
-        grid-row: 1 / -1;
+        justify-self: center;
         align-self: center;
+        margin: 0 auto;
+        width: 60%;
+        max-width: 220px;
     }
 
 
