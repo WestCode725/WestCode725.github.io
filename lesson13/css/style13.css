@@ -1,0 +1,404 @@
+body{
+    margin: 0 auto;
+    background-color: #DDD;
+    width: 100%;
+}
+
+body p, body a{
+    font-family: 'Poppins', serif;
+}
+
+h1, h2, h3, h4, h5{
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.preston-page{
+    background-color: #FFF;
+}
+
+.banner{
+    text-align: center;
+    background-color: khaki;
+    margin: 0;
+    padding: 10px;
+}
+
+header{
+    background: rgb(167,216,254);
+    background: linear-gradient(90deg, rgba(167,216,254,1) 1%, rgba(0,137,252,1) 46%, rgba(45,101,251,1) 98%);
+    background-size: 100%;
+    color: #222;
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+    padding-bottom: 20px;
+}
+
+header h1{
+    margin: 30px 0 0 20px;
+    color: white;
+}
+
+header img{
+    justify-self: center;
+    align-self: center;
+    width: 80px;
+    height: 80px;
+    margin-right: -20%;
+}
+
+header p{
+    margin-left: 20px;
+    max-width: 600px;
+    color: white;
+    margin-right: 20px;
+}
+
+
+/*        navigation section 
+
+*/
+
+.navigation{
+    list-style: none;
+    padding: 0;
+    margin: 4px 0;
+}
+
+.navigation li:first-child{
+    display: block;
+    text-align: center;
+    padding: 5px;
+}
+
+.navigation li{
+    display: none; 
+}
+
+.navigation a{
+   padding: 8px; 
+   display: block;
+   text-decoration: none;
+   color: #333;
+}
+
+.navigation a:visited{
+    color: #333;
+}
+
+.responsive li{
+    display: block;
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #3D3D3D;
+}
+
+.navigation li:first-child a:hover{
+    color: #2F2F25;
+    font-weight: 800;
+}
+
+.navigation li:hover{
+    color: #6F6F65;
+    font-weight: 800;
+}
+
+
+main h3{
+    margin: 150px auto 15px auto;
+    text-align: center;
+}
+
+main h2{
+    border-top: 1px solid black;
+    padding-top: 14px;
+    margin-top: 0;
+}
+
+#preston-heading{
+    padding-left: 20px;
+}
+
+.heroweathersumm{
+    width: auto;
+    position: relative;
+}
+
+#weathersumm{
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    padding-left: 8px;
+    background-color: #ececec;
+    opacity: 68%;
+    height: 99%;
+}
+
+.dscrp{
+    font-size: 100%;
+    max-width: 90%;
+    justify-items: center;
+    width: fit-content;
+    padding-right: 120px;
+}
+
+.dscrp p{
+    margin: 8px 0;
+}
+
+#windinfo{
+    grid-row: 4;
+    grid-column: 1/4;
+}
+
+
+/*weather summary    */
+#weathersumm h4{
+    margin-top: 5px;
+}
+
+#weather-current{
+    font-size: 170%;
+}
+
+
+#hero-img{
+    width: 100%;
+}
+
+/*        5 day forecast     
+*/
+#fivedaylayout{
+    display: block;
+    text-align: center;
+    justify-content: center;
+}
+
+.detailgrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 40%;
+    margin: 19px auto 0 auto;    
+}
+
+
+.day{
+    border: 1px solid black;
+    margin: 10px 5px;
+    padding-bottom: 10px;
+}
+
+#day1{
+    background-image: linear-gradient(to bottom right, white, rgb(204, 253, 253));
+}
+
+#day2{
+    background-image: linear-gradient(to bottom right, white, rgb(146, 146, 146));
+}
+
+#day3{
+    background-image: linear-gradient(to bottom right, white, rgb(204, 253, 253));
+}
+
+#day4{
+    background-image: linear-gradient(to bottom right, white, rgb(204, 253, 253));
+}
+
+#day5{
+    background-image: linear-gradient(to bottom right, white, rgb(146, 146, 146));
+}
+
+
+.day img{
+    width: 80px;
+}
+
+.dayofweek{
+    font-weight: 800;
+}
+
+.hilo{
+    font-size: 160%;
+    margin: 0;
+}
+
+.sun{
+    font-size: small;
+}
+
+#article{
+    
+    height: max-content;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 90%;
+    margin: 80px auto 0 auto;
+    padding-bottom: 20px;
+}
+
+#article img{
+    max-width: 130px;
+    float: right;
+
+}
+
+#story{
+    font-size: small;
+}
+
+/*        footer section
+*/
+
+#footer {
+    
+    grid-column: 1 / -1;
+    padding: 5px;
+    text-align: center;
+}
+
+#footer p{
+    margin-bottom: 9px;
+    font-size: 90%;
+    text-align: center;
+}
+
+.legal{
+    padding-top: 30px;
+}
+
+#footer p.highlight {
+    color: maroon;
+}
+
+
+#contact{
+    background-color: #DEDEDE;
+    padding: 19px;
+}
+
+#map{
+    height: 200px;
+    width: 300px;
+    border: 1px solid black;
+}
+
+@media only screen and (min-width: 690px){
+    
+    main h2{
+        border: 0;
+    }
+
+    .navigation {
+        display: flex;
+        
+    }
+
+    .navigation li{
+        display: block;
+        flex: 1 1 auto;
+    }
+    
+    .menubutton{
+        display: none!important;
+    }
+
+    #weathersumm{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 90%;
+        border: none;
+        background-color: rgba(0,137,252,0);
+        top: 10%;
+        left: 5%;
+        padding: 8px;
+        color: white;
+        font-size: 2.5vw;
+        height: 80%;
+    }
+
+   
+
+    .dscrp{
+        font-size: 120%;
+        background-color: rgba(100,100,100,.9);
+        padding: 12px;
+        height: max-content;
+
+    }
+
+    #fivedaylayout{
+        display: flex;
+        width: 100%;
+    }
+
+    .detailgrid{
+        width: auto;
+        height: max-content;
+    }
+
+    .detailgrid p{
+        margin-top: 0px;
+        line-height: 0;
+    }
+
+    .day{
+        width: 20%;
+        align-self: stretch;
+        padding: 9px;
+    }
+
+    #contact{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 30px auto;
+    }
+
+    #map{
+        grid-column: 2;
+        grid-row: 1 / -1;
+    
+    }
+
+    #largeimg{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 5%;
+        color: white;
+        font-weight: 600;
+    }
+
+    #smallimg, #medimg{
+        display: none;
+    }
+} 
+
+@media only screen and (max-width: 449px){
+    #largeimg, #medimg{
+        display: none;
+    }
+
+    #smallimg{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 5%;
+        color: white;
+        font-weight: 600;
+    }
+}
+
+@media only screen and (max-width: 689px) and (min-width: 450px){
+    #smallimg, #largeimg{
+        display: none;
+    }
+
+    #medimg{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 5%;
+        color: white;
+        font-weight: 600;
+    }
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Preston Town Page</title>
+    <link rel="shortcut icon" href="images/WW.ico">
+    <meta name="description" content="The weather and news for Preston Idaho">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style6.css">
+    <script src="js/preston-6.js"></script>
+    
+</head>
+
+<body>
+    <p class="banner">Pancake breakfast at 100 E Main St this <b>Saturday</b> at <b>9:00AM.</b> Don't miss out!</p>
+    <div class="preston-page">
+        <header>
+            <img src="images/wweathericon.png" alt="Weather Weekly logo">
+            <div class="mainlogo">
+                <h1>Weather Weekly</h1>
+                <p><em>Southeast Idaho's number one place for all your local weather information.</em></p>
+                <div class="mainlogo">
+        </header>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" class="menubutton">&#9776; Menu</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="../lesson7/weathergallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h2 id="preston-heading">Preston Idaho</h2>
+            <div class="heroweathersumm">
+
+
+
+                <picture >
+                    <source srcset="images/franklinsmall.jpeg" media="(max-width: 449px)" type="image/jpeg" >
+                        <p id="smallimg">Small</p>
+                    <source srcset="images/franklinmedium.jpeg" media="(min-width: 450px) and (max-width: 689px)">
+                        <p id="medimg">Medium</p>
+                    <source srcset="images/franklinOriginal.jpeg" media="(min-width: 690px)">
+                        <p id="largeimg">Large</p>
+                    <img src="images/franklinOriginal.jpeg" id="hero-img">
+                </picture>
+
+                <section id="weathersumm">
+                    <p id="weather-current">&#9728;&#65039; 62&#176; Sunny</p>
+                    <div class="dscrp">
+                        <p id="curr"> Currently: Sunny</p>
+                        <p id="high">High: <span id="hightemp">48</span>&#176; F</p>
+                        <p id="low">Low: 41&#176; F</p>
+                        <p id="windinfo">Wind: ENE <span id="windspeed">15</span>mph</p>
+                        <p id="feels">Feels like: <span id="windchill"></span>&#176; F</p>
+                    </div>
+
+
+                </section>
+            </div>
+
+
+            <div>
+                <h3>5 Day Forecast</h3>
+                <div id="fivedaylayout">
+                    <div class="day" id="day1">
+                        <p class="dayofweek">Today</p>
+                        <img src="images/partclouds.png" alt="sunicon">
+                        <p class="hilo">68&#176; / 39&#176;</p>
+                        <p>Mostly Cloudy</p>
+                        <p>0% chance of rain</p>
+                        <div class="detailgrid">
+                            <p class="sun">Sunrise:</p>
+                            <p>7:25AM </p>
+                            <p class="sun">Sunset: </p>
+                            <p>7:02PM</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="day" id="day2">
+                        <p class="dayofweek">Tomorrow</p>
+                        <img src="images/partclouds.png" alt="partly cloudy icon">
+                        <p class="hilo">62&#176; / 34&#176;</p>
+                        <p>Partly Cloudy</p>
+                        <p>20% chance of rain</p>
+                        <div class="detailgrid">
+                            <p class="sun">Sunrise:</p>
+                            <p>7:26AM </p>
+                            <p class="sun">Sunset: </p>
+                            <p>7:02PM</p>
+                        </div>
+                    </div>
+
+                    <div class="day" id="day3">
+                        <p class="dayofweek">Saturday</p>
+                        <img src="images/Sunshine.png" alt="sunicon">
+                        <p class="hilo">67&#176; / 40&#176;</p>
+                        <p>Sunny</p>
+                        <p>0% chance of rain</p>
+                        <div class="detailgrid">
+                            <p class="sun">Sunrise:</p>
+                            <p>7:25AM </p>
+                            <p class="sun">Sunset: </p>
+                            <p>7:02PM</p>
+                        </div>
+                    </div>
+
+                    <div class="day" id="day4">
+                        <p class="dayofweek">Sunday</p>
+                        <img src="images/Sunshine.png" alt="sunicon">
+                        <p class="hilo">71&#176; / 44&#176;</p>
+                        <p>Sunny</p>
+                        <p>10% chance of rain</p>
+                        <div class="detailgrid">
+                            <p class="sun">Sunrise:</p>
+                            <p>7:25AM </p>
+                            <p class="sun"> Sunset: </p>
+                            <p>7:02PM</p>
+                        </div>
+                    </div>
+
+                    <div class="day" id="day5">
+                        <p class="dayofweek">Monday</p>
+                        <img src="images/scattered-showers.png" alt="sunicon">
+                        <p class="hilo">58&#176; / 46&#176;</p>
+                        <p>Rain</p>
+                        <p>90% chance of rain</p>
+                        <div class="detailgrid">
+                            <p class="sun">Sunrise:</p>
+                            <p>7:25AM </p>
+                            <p class="sun"> Sunset: </p>
+                            <p>7:02PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="article">
+                <h4>Roads shut down on Rte 34</h4>
+                <div id="story">
+                    <img src="images/noroads.jpg">
+                    <p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamcoet dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation.</em></p>
+                </div>
+
+
+            </div>
+
+            <h3>Contact Information</h3>
+            <div id="contact">
+                <p> &#128231; prestonhome@gmail.com</p>
+                <p>&#9742; (208) 989-4880</p>
+                <div id="map"></div>
+
+                <div id="footer">
+                    <p class="legal">&copy; <span id="copyrightyear"></span> | Weston Goodell | Idaho | <a
+                            href="https://www.byui.edu/online">BYUI Online Learning</a></p>
+                    <p class="highlight">Last Updated: <span id="lastUpdated"></span></p>
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Poppins', 'Tillium Web'
+                ]
+            }
+        });
+    </script>
+</body>
