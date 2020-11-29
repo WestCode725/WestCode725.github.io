@@ -8,8 +8,8 @@
     <link rel="shortcut icon" href="images/WW.ico">
     <meta name="description" content="The weather and news for Preston Idaho">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style6.css">
-    <script src="js/preston-6.js"></script>
+    <link rel="stylesheet" href="css/style13.css">
+    <script src="js/preston-final.js"></script>
     
 </head>
 
@@ -40,106 +40,59 @@
             <h2 id="preston-heading">Preston Idaho</h2>
             <div class="heroweathersumm">
 
-
-
                 <picture >
                     <source srcset="images/franklinsmall.jpeg" media="(max-width: 449px)" type="image/jpeg" >
-                        <p id="smallimg">Small</p>
-                    <source srcset="images/franklinmedium.jpeg" media="(min-width: 450px) and (max-width: 689px)">
-                        <p id="medimg">Medium</p>
+                    <source srcset="images/franklinmedium.jpeg" media="(min-width: 450px) and (max-width: 689px)">     
                     <source srcset="images/franklinOriginal.jpeg" media="(min-width: 690px)">
-                        <p id="largeimg">Large</p>
                     <img src="images/franklinOriginal.jpeg" id="hero-img">
                 </picture>
 
-                <section id="weathersumm">
-                    <p id="weather-current">&#9728;&#65039; 62&#176; Sunny</p>
+                <div id="weathersumm">
+                    <p id="weather-current"><span id="currentT"></span> Sunny</p>
                     <div class="dscrp">
-                        <p id="curr"> Currently: Sunny</p>
-                        <p id="high">High: <span id="hightemp">48</span>&#176; F</p>
-                        <p id="low">Low: 41&#176; F</p>
-                        <p id="windinfo">Wind: ENE <span id="windspeed">15</span>mph</p>
+                        <p> Currently: <span id="curr"></span></p>
+                        <p id="high">High: <span id="hightemp"></span>&#176; F</p>
+                        <p >Low: <span id="low"></span>&#176; F</p>
+                        <p id="windinfo">Wind: <span id="windspeed"></span>mph</p>
                         <p id="feels">Feels like: <span id="windchill"></span>&#176; F</p>
                     </div>
-
-
-                </section>
+                </div>
             </div>
 
 
             <div>
                 <h3>5 Day Forecast</h3>
                 <div id="fivedaylayout">
-                    <div class="day" id="day1">
-                        <p class="dayofweek">Today</p>
-                        <img src="images/partclouds.png" alt="sunicon">
-                        <p class="hilo">68&#176; / 39&#176;</p>
-                        <p>Mostly Cloudy</p>
-                        <p>0% chance of rain</p>
-                        <div class="detailgrid">
-                            <p class="sun">Sunrise:</p>
-                            <p>7:25AM </p>
-                            <p class="sun">Sunset: </p>
-                            <p>7:02PM</p>
-                        </div>
-
+                    
+                    <div class="day">
+                        <p id="day1"></p>
+                        <img id="day1img">
+                        <p><span id="day1high"></span>&#176;</p>
                     </div>
 
 
-                    <div class="day" id="day2">
-                        <p class="dayofweek">Tomorrow</p>
-                        <img src="images/partclouds.png" alt="partly cloudy icon">
-                        <p class="hilo">62&#176; / 34&#176;</p>
-                        <p>Partly Cloudy</p>
-                        <p>20% chance of rain</p>
-                        <div class="detailgrid">
-                            <p class="sun">Sunrise:</p>
-                            <p>7:26AM </p>
-                            <p class="sun">Sunset: </p>
-                            <p>7:02PM</p>
-                        </div>
+                    <div class="day">
+                        <p id="day2"></p>
+                        <img id="day2img">
+                        <p><span id="day2high"></span>&#176;</p>
                     </div>
 
-                    <div class="day" id="day3">
-                        <p class="dayofweek">Saturday</p>
-                        <img src="images/Sunshine.png" alt="sunicon">
-                        <p class="hilo">67&#176; / 40&#176;</p>
-                        <p>Sunny</p>
-                        <p>0% chance of rain</p>
-                        <div class="detailgrid">
-                            <p class="sun">Sunrise:</p>
-                            <p>7:25AM </p>
-                            <p class="sun">Sunset: </p>
-                            <p>7:02PM</p>
-                        </div>
+                    <div class="day" >
+                        <p id="day3"></p>
+                        <img id="day3img">
+                        <p><span id="day3high"></span>&#176;</p>
                     </div>
 
-                    <div class="day" id="day4">
-                        <p class="dayofweek">Sunday</p>
-                        <img src="images/Sunshine.png" alt="sunicon">
-                        <p class="hilo">71&#176; / 44&#176;</p>
-                        <p>Sunny</p>
-                        <p>10% chance of rain</p>
-                        <div class="detailgrid">
-                            <p class="sun">Sunrise:</p>
-                            <p>7:25AM </p>
-                            <p class="sun"> Sunset: </p>
-                            <p>7:02PM</p>
-                        </div>
+                    <div class="day" >
+                        <p id="day4"></p>
+                        <img id="day4img">
+                        <p><span id="day4high"></span>&#176;</p>
                     </div>
 
-                    <div class="day" id="day5">
-                        <p class="dayofweek">Monday</p>
-                        <img src="images/scattered-showers.png" alt="sunicon">
-                        <p class="hilo">58&#176; / 46&#176;</p>
-                        <p>Rain</p>
-                        <p>90% chance of rain</p>
-                        <div class="detailgrid">
-                            <p class="sun">Sunrise:</p>
-                            <p>7:25AM </p>
-                            <p class="sun"> Sunset: </p>
-                            <p>7:02PM</p>
-                        </div>
+                    <div class="day" >
+                        <p id="day5"></p>
+                        <img id="day5img">
+                        <p><span id="day5high"></span>&#176;</p>
                     </div>
                 </div>
             </div>

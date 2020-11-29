@@ -1,7 +1,5 @@
 body{
     margin: 0 auto;
-    background-color: #DDD;
-    width: 100%;
 }
 
 body p, body a{
@@ -54,7 +52,7 @@ header p{
 }
 
 
-/*        navigation section 
+/*       -------------- navigation section ------------------
 
 */
 
@@ -131,6 +129,7 @@ main h2{
     background-color: #ececec;
     opacity: 68%;
     height: 99%;
+    width: 99%;
 }
 
 .dscrp{
@@ -138,7 +137,7 @@ main h2{
     max-width: 90%;
     justify-items: center;
     width: fit-content;
-    padding-right: 120px;
+    padding: 0 30px;
 }
 
 .dscrp p{
@@ -158,6 +157,7 @@ main h2{
 
 #weather-current{
     font-size: 170%;
+    padding: 0 30px;
 }
 
 
@@ -187,32 +187,12 @@ main h2{
     padding-bottom: 10px;
 }
 
-#day1{
-    background-image: linear-gradient(to bottom right, white, rgb(204, 253, 253));
-}
-
-#day2{
-    background-image: linear-gradient(to bottom right, white, rgb(146, 146, 146));
-}
-
-#day3{
-    background-image: linear-gradient(to bottom right, white, rgb(204, 253, 253));
-}
-
-#day4{
-    background-image: linear-gradient(to bottom right, white, rgb(204, 253, 253));
-}
-
-#day5{
-    background-image: linear-gradient(to bottom right, white, rgb(146, 146, 146));
-}
-
 
 .day img{
     width: 80px;
 }
 
-.dayofweek{
+.day p:first-child{
     font-weight: 800;
 }
 
@@ -272,7 +252,7 @@ main h2{
 
 
 #contact{
-    background-color: #DEDEDE;
+    background-color: #EDEDED;
     padding: 19px;
 }
 
@@ -326,6 +306,10 @@ main h2{
 
     }
 
+    #weather-current{
+        padding: 0;
+    }
+
     #fivedaylayout{
         display: flex;
         width: 100%;
@@ -358,47 +342,30 @@ main h2{
         grid-row: 1 / -1;
     
     }
-
-    #largeimg{
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 5%;
-        color: white;
-        font-weight: 600;
-    }
-
-    #smallimg, #medimg{
-        display: none;
-    }
 } 
 
+
+@media only screen and (min-width: 100px) and (max-width: 689px){
+    .day{
+        width: 80%;
+        margin: 10px auto;
+    }
+
+}
+
 @media only screen and (max-width: 449px){
-    #largeimg, #medimg{
-        display: none;
+    #map{
+        width: 100%;
+        max-width: 300px;
     }
 
-    #smallimg{
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 5%;
-        color: white;
-        font-weight: 600;
+    #article{
+        width: auto;
     }
+
+    #weathersumm{
+        width: 98%;
+    }
+
 }
 
-@media only screen and (max-width: 689px) and (min-width: 450px){
-    #smallimg, #largeimg{
-        display: none;
-    }
-
-    #medimg{
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 5%;
-        color: white;
-        font-weight: 600;
-    }
-}
