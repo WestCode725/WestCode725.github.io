@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Preston Town Page</title>
+    <link rel="shortcut icon" href="images/WW.ico">
+    <meta name="description" content="The weather and news for Preston Idaho">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="prestoncss/preston.css">
+    <script src="prestonjs/preston-final.js"></script>
+    
+</head>
+
+<body>
+    <p class="banner">Pancake breakfast at 100 E Main St this <b>Saturday</b> at <b>9:00AM.</b> Don't miss out!</p>
+    <div class="preston-page">
+        <header>
+            <img src="prestonimages/wweathericon.png" alt="Weather Weekly logo">
+            <div class="mainlogo">
+                <h1>Weather Weekly</h1>
+                <p><em>Southeast Idaho's number one place for all your local weather information.</em></p>
+                <div class="mainlogo">
+        </header>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" class="menubutton">&#9776; Menu</a></li>
+                <li><a href="homepage.html"">Home</a></li>
+                <li><a href="#">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="StormCenter.html">Storm Center</a></li>
+                <li><a href="weathergallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h2 id="preston-heading">Preston Idaho</h2>
+            <div class="heroweathersumm">
+
+                <picture >
+                    <source srcset="prestonimages/franklinsmall.jpeg" media="(max-width: 449px)" type="image/jpeg" >
+                    <source srcset="prestonimages/franklinmedium.jpeg" media="(min-width: 450px) and (max-width: 689px)">     
+                    <source srcset="prestonimages/franklinOriginal.jpeg" media="(min-width: 690px)">
+                    <img src="prestonimages/franklinOriginal.jpeg" id="hero-img">
+                </picture>
+
+                <div id="weathersumm">
+                    <p id="weather-current"><span id="currentT"></span> Sunny</p>
+                    <div class="dscrp">
+                        <p> Currently: <span id="curr"></span></p>
+                        <p id="high">High: <span id="hightemp"></span>&#176; F</p>
+                        <p >Low: <span id="low"></span>&#176; F</p>
+                        <p id="windinfo">Wind: <span id="windspeed"></span>mph</p>
+                        <p id="feels">Feels like: <span id="windchill"></span>&#176; F</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div>
+                <h3>5 Day Forecast</h3>
+                <div id="fivedaylayout">
+                    
+                    <div class="day">
+                        <p id="day1"></p>
+                        <img id="day1img">
+                        <p><span id="day1high"></span>&#176;</p>
+                    </div>
+
+
+                    <div class="day">
+                        <p id="day2"></p>
+                        <img id="day2img">
+                        <p><span id="day2high"></span>&#176;</p>
+                    </div>
+
+                    <div class="day" >
+                        <p id="day3"></p>
+                        <img id="day3img">
+                        <p><span id="day3high"></span>&#176;</p>
+                    </div>
+
+                    <div class="day" >
+                        <p id="day4"></p>
+                        <img id="day4img">
+                        <p><span id="day4high"></span>&#176;</p>
+                    </div>
+
+                    <div class="day" >
+                        <p id="day5"></p>
+                        <img id="day5img">
+                        <p><span id="day5high"></span>&#176;</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="article">
+                <h4>Roads shut down on Rte 34</h4>
+                <div id="story">
+                    <img src="prestonimages/noroads.jpg">
+                    <p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamcoet dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation.</em></p>
+                </div>
+
+
+            </div>
+
+            <h3>Contact Information</h3>
+            <div id="contact">
+                <p> &#128231; prestonhome@gmail.com</p>
+                <p>&#9742; (208) 989-4880</p>
+                <div id="map"></div>
+
+                <div id="footer">
+                    <p class="legal">&copy; <span id="copyrightyear"></span> | Weston Goodell | Idaho | <a
+                            href="https://www.byui.edu/online">BYUI Online Learning</a></p>
+                    <p class="highlight">Last Updated: <span id="lastUpdated"></span></p>
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Poppins', 'Tillium Web'
+                ]
+            }
+        });
+    </script>
+</body>
