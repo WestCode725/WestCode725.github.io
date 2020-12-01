@@ -1,0 +1,246 @@
+body{
+    margin: 0 auto;
+    width: 100%;
+}
+
+body p, body a{
+    font-family: 'Poppins', serif;
+}
+
+h1, h2, h3, h4, h5{
+    font-family: 'Titillium Web', sans-serif;
+}
+
+header{
+    background: rgb(167,216,254);
+    background: linear-gradient(90deg, rgba(167,216,254,1) 1%, rgba(0,137,252,1) 46%, rgba(45,101,251,1) 98%);
+    background-size: 100%;
+    color: #222;
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+    padding-bottom: 20px;
+}
+
+header h1{
+    margin: 30px 0 0 20px;
+    color: white;
+}
+
+header img{
+    justify-self: center;
+    align-self: center;
+    width: 80px;
+    height: 80px;
+}
+
+header p{
+    margin-left: 20px;
+    max-width: 600px;
+    color: white;
+    margin-right: 20px;
+}
+
+
+
+/*     ---------------------   NAVIGATION   ------------------------ 
+
+*/
+
+.navigation{
+    list-style: none;
+    padding: 0;
+    margin: 4px 0;
+}
+
+.navigation li:nth-child(2){
+    font-weight: 800;
+    text-shadow: 0 0 gray;
+}
+
+.navigation li:first-child{
+    display: block;
+    text-align: center;
+    padding: 5px;
+}
+
+.navigation li{
+    display: none; 
+}
+
+.navigation a{
+   padding: 8px; 
+   display: block;
+   text-decoration: none;
+   color: #333;
+}
+
+.navigation a:visited{
+    color: #333;
+}
+
+.responsive li{
+    display: block;
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #3D3D3D;
+}
+
+.navigation li:first-child a:hover{
+    color: #2F2F25;
+    font-weight: 800;
+}
+
+.navigation li:hover{
+    color: #6F6F65;
+    font-weight: 800;
+}
+
+
+#storm-heading{
+    padding-left: 20px;
+}
+
+
+
+
+.editable p, .editable img{
+    display: block;
+}
+
+
+img{
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+section img{
+    box-shadow: 0px 0px 14px 5px #555;
+}
+
+section{
+    box-shadow: 0px 0px 5px #333;
+}
+
+section{
+    border: 1px solid #555;
+    width: 80%;
+    max-width: 1000px;
+    padding: 20px;
+    margin: 20px auto;
+    text-align: center;
+    background-image: linear-gradient(#ff9494,#ff94AD ); 
+}
+
+main h2{
+    color: white;  
+    font-size: 1.5em;
+    text-shadow: 1px 1px 1px #444;
+}
+
+.editable p:first-child{
+    font-style: italic;
+}
+
+main p, main img{
+    display: none;
+}
+
+
+
+/*   ----------------     FOOTER  ------------------------
+*/
+
+footer {
+    padding: 27px;
+    text-align: center;
+    margin-top: 15%;
+    background-color: #DEDEDE;
+    }
+
+
+footer p{
+    margin-bottom: 9px;
+    font-size: 90%;
+    text-align: center;
+}
+
+textarea{
+    width: 80%;
+    font-size: small;
+}
+
+
+
+@media only screen and (min-width: 600px) and (max-width: 689px){
+    .towns{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 20px;
+        gap: 20px;
+    }
+
+    section div{
+        padding: 20px;
+    }
+
+    div h2, div p, div img{
+        display: flex;
+        justify-content: center;
+    }
+
+    section{
+        display: flex;
+    }
+
+    section:nth-child(odd){
+        flex-direction: row-reverse;
+    }
+
+    section img{
+        justify-self: center;
+        align-self: center;
+        margin: 0 auto;
+        width: 60%;
+        max-width: 220px;
+    }
+
+
+}
+
+
+@media only screen and (min-width: 690px) {
+    
+   
+
+    .navigation {
+        display: flex;
+        
+    }
+
+    .navigation li{
+        display: block;
+        flex: 1 1 auto;
+    }
+    
+    .menubutton{
+        display: none!important;
+    }
+
+    .towns{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .towns p, .towns img{
+        display: block;
+    }
+
+    main img{
+        margin: 0 auto;
+    }
+  
+} 
+
