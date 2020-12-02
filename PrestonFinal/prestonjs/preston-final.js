@@ -26,10 +26,11 @@ fetch(prestonURL)
     .then(prestonURL)
     .then((response) => response.json())
     .then((jsObject) => {
-        console.log(jsObject)
-        const days = prestonURL;
-        document.querySelector("currentT").innerHTML = days.main.temp;
-    
+        document.querySelector("#currentT").innerHTML = Math.round(jsObject.main.temp);
+        document.querySelector("#hightemp").innerHTML = Math.round(jsObject.main.temp_max);
+        document.querySelector("#low").innerHTML = Math.round(jsObject.main.temp_min);
+        document.querySelector("#windspeed").innerHTML = Math.round(jsObject.wind.speed);
+
     //windchill
 
     let windspeed = parseInt(document.getElementById("windspeed").textContent);
@@ -43,4 +44,51 @@ fetch(prestonURL)
         document.getElementById("windchill").innerHTML = "N/A";
     }
 });
+
+
+const fiveday = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=1bce53e79e74fa83e4a14612f4b195a1';
+
+fetch(fiveday)
+.then(fiveday)
+.then((response) => response.json())
+.then((jsObject) => {
+    const list = jsObject['list'];  
+    let x = 1;
+    for (let i = 0; i < list.length; i++){
+        if (list[i].dt_txt.includes('18:00:00')){
+            document.querySelector("#day" + x + "high").textContent = Math.round(list[i].main.temp_max);
+            let weatherimg = "https://openweathermap.org/img/wn/" + list[i].weather.icon + "@2x.png";
+            document.querySelector('#day' + x + 'img').setAttribute('src', weatherimg);
+            x++;
+        }
+    }
+})
+
+
+for(let i = 0; i < 7; i++){
+    let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    let today = new Date().getDay();
+    var count = today + i;
+    if(count > 6){
+      count -= 7;
+    }
+    document.querySelector('#day'+ (i + 1)).textContent = days[count];
+}
+
+// Initialize and add the map
+function initMap() {
+    // The location of Uluru
+    const uluru = { lat: -25.344, lng: 131.036 };
+    // The map, centered at Uluru
+    const map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 4,
+      center: uluru,
+    });
+    // The marker, positioned at Uluru
+    const marker = new google.maps.Marker({
+      position: uluru,
+      map: map,
+    });
+  }
+  
 })
