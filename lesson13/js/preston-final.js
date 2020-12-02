@@ -57,7 +57,7 @@ fetch(fiveday)
     for (let i = 0; i < list.length; i++){
         if (list[i].dt_txt.includes('18:00:00')){
             document.querySelector("#day" + x + "high").textContent = Math.round(list[i].main.temp_max);
-            let weatherimg = "https://openweathermap.org/img/wn/" + list[i].weather.icon + "@2x.png";
+            let weatherimg = "https://openweathermap.org/img/wn/" + list[i].weather[0].icon + "@2x.png";
             document.querySelector('#day' + x + 'img').setAttribute('src', weatherimg);
             x++;
         }
