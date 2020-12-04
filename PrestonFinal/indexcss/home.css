@@ -129,7 +129,7 @@ section{
     padding: 20px;
     margin: 20px auto;
     text-align: center;
-    background-image: linear-gradient(#ff9494,#ff94AD ); 
+    background-image: linear-gradient(#f7c377,#fdd47b ); 
 }
 
 main h2{
@@ -211,7 +211,9 @@ textarea{
 
 @media only screen and (min-width: 690px) {
     
-   
+    .responsive li{
+        border: none;
+    }
 
     .navigation {
         display: flex;

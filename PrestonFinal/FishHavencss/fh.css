@@ -62,7 +62,7 @@ header p{
     margin: 4px 0;
 }
 
-.navigation li:nth-child(3){
+.navigation li:nth-child(5){
     font-weight: 800;
     text-shadow: 0 0 gray;
 }

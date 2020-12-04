@@ -62,7 +62,7 @@ header p{
     margin: 4px 0;
 }
 
-.navigation li:nth-child(3){
+.navigation li:nth-child(4){
     font-weight: 800;
     text-shadow: 0 0 gray;
 }
@@ -230,6 +230,10 @@ main h2{
     padding: 19px;
 }
 
+#footer{
+    background-color: #EDEDED;
+}
+
 #map{
     height: 200px;
     width: 300px;
@@ -303,7 +307,7 @@ main h2{
 
     #article{
         width: 80%;
-        padding: 5%;
+        padding: 20px;
     }
 
     #article img{
@@ -316,7 +320,7 @@ main h2{
 
 @media only screen and (min-width: 100px) and (max-width: 689px){
     .day{
-        width: 90%;
+        width: 80%;
         margin: 10px auto;
     }
 
