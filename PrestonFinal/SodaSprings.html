@@ -7,9 +7,9 @@
     <title>Soda Springs Town Page</title>
     <link rel="shortcut icon" href="images/WW.ico">
     <meta name="description" content="The weather and news for Preston Idaho">
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="SodaSpringscss/normalize.css">
     <link rel="stylesheet" href="SodaSpringscss/ss.css">
-    <script src="prestonjs/preston-final.js"></script>
+    <script src="ssjs/soda.js"></script>
 
 </head>
 
@@ -38,27 +38,29 @@
 
         <main>
             <h2 id="preston-heading">Soda Springs Idaho</h2>
-            <div class="heroweathersumm">
+            <div id="withevents">
+                <div class="heroweathersumm">
 
-                <picture>
-                    <source srcset="images/sspagesmall.jpg" media="(max-width: 449px)" type="image/jpeg">
-                    <source srcset="images/sspagemedium.jpg" media="(min-width: 450px) and (max-width: 689px)">
-                    <source srcset="images/sspage.jpg" media="(min-width: 690px)">
-                    <img src="images/sspage.jpg" id="hero-img">
-                </picture>
+                    <picture>
+                        <source srcset="images/sspagesmall.jpg" media="(max-width: 449px)" type="image/jpeg">
+                        <source srcset="images/sspagemedium.jpg" media="(min-width: 450px) and (max-width: 689px)">
+                        <source srcset="images/sspage.jpg" media="(min-width: 690px)">
+                        <img src="images/sspage.jpg" id="hero-img">
+                    </picture>
 
-                <div id="weathersumm">
-                    <div id="paragraphs">
-                        <p> Currently: <span id="currentT"></span>&#176; F</p>
-                        <p id="high">High: <span id="hightemp"></span>&#176; F</p>
-                        <p>Low: <span id="low"></span>&#176; F</p>
-                        <p id="windinfo">Wind: <span id="windspeed"></span>mph</p>
-                        <p id="feels">Feels like: <span id="windchill"></span>&#176; F</p>
+                    <div id="weathersumm">
+                        <div id="paragraphs">
+                            <p> Currently: <span id="currentT"></span>&#176; F</p>
+                            <p id="high">High: <span id="hightemp"></span>&#176; F</p>
+                            <p>Low: <span id="low"></span>&#176; F</p>
+                            <p id="windinfo">Wind: <span id="windspeed"></span>mph</p>
+                            <p id="feels">Feels like: <span id="windchill"></span>&#176; F</p>
+                        </div>
                     </div>
                 </div>
+
+                <div id="events"></div>
             </div>
-
-
             <div>
                 <h3>5 Day Forecast</h3>
                 <div id="fivedaylayout">
@@ -101,13 +103,13 @@
 
                 <h4>Small magnitude 3.5 quake hits near Soda Springs, Idaho early morning</h4>
                 <p><em>PThe United States Geological Survey (USGS) reported a magnitude 3.5 quake
-                     in the Idaho near the town of Soda Springs only 14 minutes ago. The earthquake 
-                     hit early morning on Sunday 22 November 2020 at 4.04 am local time at a very shallow 
-                     depth of 4 miles. The exact magnitude, epicenter, and depth of the quake might be 
-                     revised within the next few hours or minutes as seismologists review data and refine 
-                     their calculations, or as other agencies issue their report. <br><br>
-                    A second report was later issued by the European-Mediterranean Seismological 
-                    Centre (EMSC), which listed it as a magnitude 3.5 earthquake as well.
+                        in the Idaho near the town of Soda Springs only 14 minutes ago. The earthquake
+                        hit early morning on Sunday 22 November 2020 at 4.04 am local time at a very shallow
+                        depth of 4 miles. The exact magnitude, epicenter, and depth of the quake might be
+                        revised within the next few hours or minutes as seismologists review data and refine
+                        their calculations, or as other agencies issue their report. <br><br>
+                        A second report was later issued by the European-Mediterranean Seismological
+                        Centre (EMSC), which listed it as a magnitude 3.5 earthquake as well.
                     </em></p>
             </div>
 

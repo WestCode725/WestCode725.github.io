@@ -154,6 +154,21 @@ main h2{
     width: 100%;
 }
 
+#events{
+    position: absolute;
+    top: 370px;
+    left: 25px;
+    z-index: 3;
+    min-width: 310px;
+    max-width: 320px;
+    margin: 30px auto;
+    border: 1px solid #333;
+    padding: 20px;
+    box-shadow: 0 0 14px #000;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+}
+
 
 /*    --------------------    5 day forecast     ------------------ */
 #fivedaylayout{
@@ -168,7 +183,6 @@ main h2{
     width: 40%;
     margin: 19px auto 0 auto;    
 }
-
 
 .day{
     border: 1px solid black;
@@ -283,6 +297,7 @@ main h2{
         padding: 9px;
     }
 
+
     #contact{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -326,6 +341,13 @@ main h2{
 
     #contact{
         text-align: center;
+    }
+
+    #events{
+        position: initial;
+        bottom: 40px;
+        width: 75%;
+        min-width: 0;
     }
 
     #map{

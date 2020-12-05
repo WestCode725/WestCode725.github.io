@@ -6,6 +6,13 @@ window.addEventListener('load', (event) => {
     hamburger.addEventListener('click', () => {
         homenav.classList.toggle('responsive')
     }, false);
+
+    const lu = document.querySelector('#lastUpdated');
+    lu.textContent = document.lastModified;
+
+    const cry = document.querySelector('#copyrightyear');
+    cry.textContent = new Date().getFullYear();
+
 });
 
 

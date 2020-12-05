@@ -7,7 +7,7 @@ window.addEventListener('load', (event) => {
         homenav.classList.toggle('responsive')
     }, false);
 
-    
+
     const lu = document.querySelector('#lastUpdated');
     lu.textContent = document.lastModified;
 
@@ -25,7 +25,7 @@ window.addEventListener('load', (event) => {
     }
 
 
-    const prestonURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=1bce53e79e74fa83e4a14612f4b195a1';
+    const prestonURL = 'https://api.openweathermap.org/data/2.5/weather?id=5585000&units=imperial&appid=1bce53e79e74fa83e4a14612f4b195a1';
 
     fetch(prestonURL)
         .then(prestonURL)
@@ -50,7 +50,7 @@ window.addEventListener('load', (event) => {
         })
 
 
-    const fiveday = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=1bce53e79e74fa83e4a14612f4b195a1';
+    const fiveday = 'https://api.openweathermap.org/data/2.5/forecast?id=5585000&units=imperial&appid=1bce53e79e74fa83e4a14612f4b195a1';
 
     fetch(fiveday)
         .then(fiveday)
@@ -89,7 +89,7 @@ window.addEventListener('load', (event) => {
             console.log(jsObject)
             const townevents = jsObject["towns"];
             for (let i = 0; i < townevents.length; i++) {
-                if (townevents[i].name == "Preston") {
+                if (townevents[i].name == "Fish Haven") {
                     for (let j = 0; j < townevents[i].events.length; j++) {
                         let theevent = document.createElement("p");
                         theevent.textContent = townevents[i].events[j];

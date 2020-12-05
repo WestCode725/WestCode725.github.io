@@ -107,7 +107,7 @@ header p{
 
 
 main h3{
-    margin: 150px auto 15px auto;
+    margin: 50px auto 15px auto;
     text-align: center;
 }
 
@@ -185,6 +185,27 @@ main h2{
 .day p:first-child{
     font-weight: 800;
 }
+
+
+
+/* ------------------------- events and article ----------------*/
+
+#events{
+    position: absolute;
+    top: 40vw;
+    left: 25px;
+    z-index: 3;
+    min-width: 310px;
+    max-width: 320px;
+    margin: 30px auto;
+    border: 1px solid #333;
+    padding: 20px;
+    box-shadow: 0 0 14px #000;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+}
+
+
 
 #article{
     height: max-content;
@@ -326,6 +347,13 @@ main h2{
 
     #contact{
         text-align: center;
+    }
+
+    #events{
+        position: initial;
+        bottom: 40px;
+        width: 75%;
+        min-width: 0;
     }
 
     #map{
