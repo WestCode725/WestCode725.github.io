@@ -13,17 +13,32 @@ h1, h2, h3, h4, h5{
 }
 
 header{
-    background-color: rgb(61, 152, 238);
-    color: white;
-    max-width: 100%;
-    text-align: center;
-    font-size: 130%;
-    padding: 9px;
+    background: rgb(167,216,254);
+    background: linear-gradient(90deg, rgba(167,216,254,1) 1%, rgba(0,137,252,1) 46%, rgba(45,101,251,1) 98%);
+    background-size: 100%;
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+    padding-bottom: 20px;
 }
 
-header h1 {
-    padding-right: 70px;
-    font-family: Arial, Helvetica, sans-serif;
+header h1{
+    margin: 30px 0 0 20px;
+    color: white;
+}
+
+header img{
+    justify-self: center;
+    align-self: center;
+    width: 80px;
+    height: 80px;
+    margin-right: -20%;
+}
+
+header p{
+    margin-left: 20px;
+    max-width: 600px;
+    color: white;
+    margin-right: 20px;
 }
 
 main {
