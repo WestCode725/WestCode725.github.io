@@ -292,6 +292,10 @@ main h2{
         margin: 0 auto;
     }
 
+    #events{
+        top: 35vw;
+    }
+
     .detailgrid{
         width: auto;
         height: max-content;

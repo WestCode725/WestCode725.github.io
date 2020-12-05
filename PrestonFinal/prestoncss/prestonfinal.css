@@ -193,7 +193,7 @@ main h2{
 
 #events{
     position: absolute;
-    top: 40vw;
+    top: 31vw;
     left: 25px;
     z-index: 3;
     min-width: 310px;
@@ -313,6 +313,10 @@ main h2{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 30px auto;
+    }
+
+    #events{
+        top: 35vw;
     }
 
     #map{

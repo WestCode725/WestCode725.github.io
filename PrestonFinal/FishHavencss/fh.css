@@ -275,6 +275,10 @@ main h2{
         display: none!important;
     }
 
+    #events{
+        top: 35vw;
+    }
+    
     #weather-current{
         padding: 0;
     }
