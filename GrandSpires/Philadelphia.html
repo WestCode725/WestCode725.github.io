@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Soda Springs Town Page</title>
+    <link rel="shortcut icon" href="images/WW.ico">
+    <meta name="description" content="The weather and news for Preston Idaho">
+    <link rel="stylesheet" href="SodaSpringscss/normalize.css">
+    <link rel="stylesheet" href="SodaSpringscss/ss.css">
+    <script src="ssjs/soda.js"></script>
+
+</head>
+
+<body>
+    <p class="banner">Pancake breakfast at 100 E Main St this <b>Saturday</b> at <b>9:00AM.</b> Don't miss out!</p>
+    <div class="soda-page">
+        <header>
+            <img src="images/wweathericon.png" alt="Weather Weekly logo">
+            <div class="mainlogo">
+                <h1>Weather Weekly</h1>
+                <p><em>Southeast Idaho's number one place for all your local weather information.</em></p>
+                <div class="mainlogo">
+        </header>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" class="menubutton">&#9776; Menu</a></li>
+                <li><a href="homepage.html"">Home</a></li>
+                <li><a href=" preston.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="FishHaven.html">Fish Haven</a></li>
+                <li><a href="StormCenter.html">Storm Center</a></li>
+                <li><a href="weathergallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h2 id="soda-heading">Soda Springs Idaho</h2>
+            <div id="withevents">
+                <div class="heroweathersumm">
+
+                    <picture>
+                        <source srcset="images/sspagesmall.jpg" media="(max-width: 449px)" type="image/jpeg">
+                        <source srcset="images/sspagemedium.jpg" media="(min-width: 450px) and (max-width: 689px)">
+                        <source srcset="images/sspage.jpg" media="(min-width: 690px)">
+                        <img src="images/sspage.jpg" id="hero-img">
+                    </picture>
+
+                    <div id="weathersumm">
+                        <div id="paragraphs">
+                            <p> Currently: <span id="currentT"></span>&#176; F</p>
+                            <p id="high">High: <span id="hightemp"></span>&#176; F</p>
+                            <p>Low: <span id="low"></span>&#176; F</p>
+                            <p id="windinfo">Wind: <span id="windspeed"></span>mph</p>
+                            <p id="feels">Feels like: <span id="windchill"></span>&#176; F</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="events"><h2>Upcoming Events</h2></div>
+            </div>
+            <div>
+                <h3>5 Day Forecast</h3>
+                <div id="fivedaylayout">
+
+                    <div class="day">
+                        <p id="day1"></p>
+                        <img id="day1img">
+                        <p><span id="day1high"></span>&#176;</p>
+                    </div>
+
+
+                    <div class="day">
+                        <p id="day2"></p>
+                        <img id="day2img">
+                        <p><span id="day2high"></span>&#176;</p>
+                    </div>
+
+                    <div class="day">
+                        <p id="day3"></p>
+                        <img id="day3img">
+                        <p><span id="day3high"></span>&#176;</p>
+                    </div>
+
+                    <div class="day">
+                        <p id="day4"></p>
+                        <img id="day4img">
+                        <p><span id="day4high"></span>&#176;</p>
+                    </div>
+
+                    <div class="day">
+                        <p id="day5"></p>
+                        <img id="day5img">
+                        <p><span id="day5high"></span>&#176;</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="article">
+                <img src="images/quakemap.jpg">
+
+                <h4>Small magnitude 3.5 quake hits near Soda Springs, Idaho early morning</h4>
+                <p><em>PThe United States Geological Survey (USGS) reported a magnitude 3.5 quake
+                        in the Idaho near the town of Soda Springs only 14 minutes ago. The earthquake
+                        hit early morning on Sunday 22 November 2020 at 4.04 am local time at a very shallow
+                        depth of 4 miles. The exact magnitude, epicenter, and depth of the quake might be
+                        revised within the next few hours or minutes as seismologists review data and refine
+                        their calculations, or as other agencies issue their report. <br><br>
+                        A second report was later issued by the European-Mediterranean Seismological
+                        Centre (EMSC), which listed it as a magnitude 3.5 earthquake as well.
+                    </em></p>
+            </div>
+
+            <h3>Contact Information</h3>
+            <div id="contact">
+                <p> &#128231; prestonhome@gmail.com</p>
+                <p>&#9742; (208) 989-4880</p>
+                <div id="map"><iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46943.96064635724!2d-111.62379158250253!3d42.66140751678058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8755968bb0047ae5%3A0x9d3970a1a6df8e12!2sSoda%20Springs%2C%20ID%2083276!5e0!3m2!1sen!2sus!4v1607018612933!5m2!1sen!2sus"
+                        frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+            <div id="footer">
+                <p class="legal">&copy; <span id="copyrightyear"></span> | Weston Goodell | Idaho | <a
+                        href="https://www.byui.edu/online">BYUI Online Learning</a></p>
+                <p class="highlight">Last Updated: <span id="lastUpdated"></span></p>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Poppins', 'Tillium Web'
+                ]
+            }
+        });
+    </script>
+</body>

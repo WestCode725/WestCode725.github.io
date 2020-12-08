@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Storm Center</title>
+    <link rel="shortcut icon" href="images/WW.ico">
+    <meta name="description" content="The weather and news for Preston Idaho">
+    <link rel="stylesheet" href="stormcss/normalize.css">
+    <link rel="stylesheet" href="stormcss/sc.css">
+    <script src="stormjs/StormCenter.js"></script>
+
+</head>
+
+<body>
+    <div class="storm-page">
+        <header>
+            <img src="images/wweathericon.png" alt="Weather Weekly logo">
+            <div class="mainlogo">
+                <h1>Weather Weekly</h1>
+                <p><em>Southeast Idaho's number one place for all your local weather information.</em></p>
+                <div class="mainlogo">
+        </header>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" class="menubutton">&#9776; Menu</a></li>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="SodaSprings.html">Soda Springs</a></li>
+                <li><a href="FishHaven.html">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="weathergallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <main>
+
+            <form action="thanks.html">
+                <h3 class="section">Personal Information</h3>
+                <div id="personalsec">
+                    <div class="form-box">
+                        <label for="fName">First Name</label>
+                        <input type="text" required id="fName" name="fName" placeholder="First Name"
+                            pattern="[A-Za-z]{5,}">
+                    </div>
+
+                    <div class="form-box">
+                        <label for="mName">Middle Name</label>
+                        <input type="text" id="mName" name="mName" placeholder="Middle Name" minlength="5"
+                            pattern="[A-Za-z]{5,}">
+                    </div>
+
+                    <div class="form-box">
+                        <label for="lName">Last Name</label>
+                        <input type="text" required id="lName" name="lName" placeholder="Last Name" minlength="5"
+                            pattern="[A-Za-z]{5,}">
+                    </div>
+
+                    <div class="form-box">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" minlength="5" placeholder="Email Address">
+                    </div>
+
+                    <div class="form-box">
+                        <label for="telnum">Phone Number</label>
+                        <input type="tel" required id="telnum" name="phonenumber" minlength="5" placeholder="Phone Number">
+                    </div>
+
+                    <div class="form-box">
+                        <label for="zip">Zip Code</label>
+                        <input type="number" required id="zip" minlength="5" name="zip" placeholder="Zip Code" maxlength="5"
+                            pattern="[0-9]">
+                    </div>
+                </div>
+
+                <h3 class="section">Storm Information</h3>
+
+                <div class="form-box2">
+                    <label for="sd">Storm Date</label>
+                    <input type="date" required name="date" id="sd">
+                </div>
+
+                <div class="form-box2">
+                    <label for="st">Storm Type</label>
+                    <input type="text" name="stormtype" required id="st" list="stl">
+
+                    <datalist id="stl">
+                        <option>Hurricane</option>
+                        <option>Tornado</option>
+                        <option>Flash Flood</option>
+                        <option>Hail</option>
+                        <option>Thunderstorm</option>
+                    </datalist>
+                </div>
+
+
+                <div class="form-box2">
+                    <label id="stormsev" for="severe">Storm Severity&nbsp;&nbsp;
+                        <input type="range" id="severe" name="severity" min="1" max="10" value="1" list="tickmarks" step="1"
+                            oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                    </label>
+                    <span id="rating">&nbsp;&nbsp;&nbsp;1</span>
+
+                    <datalist id="tickmarks">
+                        <option value="0"></option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
+                        <option value="5"></option>
+                        <option value="6"></option>
+                        <option value="7"></option>
+                        <option value="8"></option>
+                        <option value="9"></option>
+                        <option value="10"></option>
+                    </datalist>
+                </div>
+
+                <div class="form-box2">
+                    <label for="region">Storm Region</label>
+                    <select id="region" required name="region">
+                        <option disabled selected value="disabled">Select Region</option>
+                        <option value="preston">Preston</option>
+                        <option value="sodaprings">Soda Springs</option>
+                        <option value="fishhaven">Fish Haven</option>
+                    </select>
+                </div>
+
+
+                <div class="form-box2">
+                    <h4>Are you in danger?</h4>
+                    <label class="dangerclass" for="yes"><input required type="radio" name="danger" id="yes">
+                        &nbsp;&nbsp;Yes</label>
+                    <label class="dangerclass" for="maybe"><input type="radio" name="danger" id="maybe">
+                        &nbsp;&nbsp;Maybe</label>
+                    <label class="dangerclass" for="no"><input type="radio" name="danger" id="no">
+                        &nbsp;&nbsp;No</label>
+                </div>
+
+
+                <div class="form-box2">
+                    <textarea name="addcomments" placeholder="Additional Comments" rows="6"></textarea>
+                </div>
+
+                <input id="submit" value="Submit" type="submit">
+            </form>
+
+
+            <div id="contact">
+
+                <div id="footer">
+                    <p class="legal">&copy; <span id="copyrightyear"></span> | Weston Goodell | Idaho | <a
+                            href="https://www.byui.edu/online">BYUI Online Learning</a></p>
+                    <p class="highlight">Last Updated: <span id="lastUpdated"></span></p>
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Poppins', 'Tillium Web'
+                ]
+            }
+        });
+    </script>
+</body>

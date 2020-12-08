@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Preston Town Page</title>
+    <link rel="shortcut icon" href="images/WW.ico">
+    <meta name="description" content="The weather and news for Preston Idaho">
+    <link rel="stylesheet" href="prestoncss/normalize.css">
+    <link rel="stylesheet" href="prestoncss/prestonfinal.css">
+    <script src="prestonjs/preston-final.js"></script>
+    
+</head>
+
+<body>
+    <p class="banner">Pancake breakfast at 100 E Main St this <b>Saturday</b> at <b>9:00AM.</b> Don't miss out!</p>
+    <div class="preston-page">
+        <header>
+            <img src="images/wweathericon.png" alt="Weather Weekly logo">
+            <div class="mainlogo">
+                <h1>Weather Weekly</h1>
+                <p><em>Southeast Idaho's number one place for all your local weather information.</em></p>
+                <div class="mainlogo">
+        </header>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" class="menubutton">&#9776; Menu</a></li>
+                <li><a href="homepage.html"">Home</a></li>
+                <li><a href="#">Preston</a></li>
+                <li><a href="SodaSprings.html">Soda Springs</a></li>
+                <li><a href="FishHaven.html">Fish Haven</a></li>
+                <li><a href="StormCenter.html">Storm Center</a></li>
+                <li><a href="weathergallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h2 id="preston-heading">Preston Idaho</h2>
+            <div id="withevents">
+            <div class="heroweathersumm">
+
+                <picture >
+                    <source srcset="images/franklinsmall.jpeg" media="(max-width: 449px)" type="image/jpeg" >
+                    <source srcset="images/franklinmedium.jpeg" media="(min-width: 450px) and (max-width: 689px)">     
+                    <source srcset="images/franklinOriginal.jpeg" media="(min-width: 690px)">
+                    <img src="images/franklinOriginal.jpeg" id="hero-img">
+                </picture>
+                
+                <div id="weathersumm">
+                    <div id="paragraphs">
+                        <p> Currently: <span id="currentT"></span>&#176; F</p>
+                        <p id="high">High: <span id="hightemp"></span>&#176; F</p>
+                        <p>Low: <span id="low"></span>&#176; F</p>
+                        <p id="windinfo">Wind: <span id="windspeed"></span>mph</p>
+                        <p id="feels">Feels like: <span id="windchill"></span>&#176; F</p>
+                        </div>
+                </div>
+            </div>
+
+            <div id="events"><h2>Upcoming Events</h2></div>            
+            </div>
+            <div>
+                <h3>5 Day Forecast</h3>
+                <div id="fivedaylayout">
+                    
+                    <div class="day">
+                        <p id="day1"></p>
+                        <img id="day1img">
+                        <p><span id="day1high"></span>&#176;</p>
+                    </div>
+
+
+                    <div class="day">
+                        <p id="day2"></p>
+                        <img id="day2img">
+                        <p><span id="day2high"></span>&#176;</p>
+                    </div>
+
+                    <div class="day" >
+                        <p id="day3"></p>
+                        <img id="day3img">
+                        <p><span id="day3high"></span>&#176;</p>
+                    </div>
+
+                    <div class="day" >
+                        <p id="day4"></p>
+                        <img id="day4img">
+                        <p><span id="day4high"></span>&#176;</p>
+                    </div>
+
+                    <div class="day" >
+                        <p id="day5"></p>
+                        <img id="day5img">
+                        <p><span id="day5high"></span>&#176;</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="article">
+                <img src="images/noroads.jpg">
+
+                <h4>Roads shut down on Rte 34</h4> 
+                    <p><em>PRESTON — According to Idaho Department of Transportation, Whidmeyer Road 
+                        is closed between U. S. 50 and State Route 677 in Franklin County due to 
+                        a large amount of water over the road. It happened just before 11 a.m.
+                        on Monday. news release. Supposedly three cracked county pipelines contributed
+                        to the flooding. Officials believe recent excavation projects left the pipelines 
+                        susceptible to freezing temperatures, causing the cracks. Workers have shut off 
+                        that water feeding the pipe, and say it may take weeks to fully repair the damage. 
+                        No other information has been released. Keep checking the WSAZ App for the latest 
+                        information.
+                        </em></p>
+            </div>
+
+            <h3>Contact Information</h3>
+            <div id="contact">
+                <p> &#128231; prestonhome@gmail.com</p>
+                <p>&#9742; (208) 989-4880</p>
+                <div id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.77385346229!2d-111.91534453806953!3d42.099741626357975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1606945204576!5m2!1sen!2sus" 
+                    frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+
+                <div id="footer">
+                    <p class="legal">&copy; <span id="copyrightyear"></span> | Weston Goodell | Idaho | <a
+                            href="https://www.byui.edu/online">BYUI Online Learning</a></p>
+                    <p class="highlight">Last Updated: <span id="lastUpdated"></span></p>
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Poppins', 'Tillium Web'
+                ]
+            }
+        });
+    </script>
+</body>
