@@ -1,0 +1,136 @@
+body {
+    margin: 0 auto;
+    background-color: #EDEDED;
+    max-width: 900px;
+}
+
+header h1{
+    font-family: 'Ubuntu';
+    font-weight: 200;
+    text-align: center;
+}
+
+main {
+    margin: 30px auto;
+    justify-content: center;
+    align-content: center;
+    border: 1px solid gray;
+    box-shadow: 0 0 5px gray;
+}
+
+main div {
+    padding: 10px 20px 12px 20px;
+    background-color: white;
+}
+
+main h2{
+    font-family: 'Ubuntu', serif;
+}
+
+p, div{
+    font-family: 'Padauk';
+    line-height: 150%;
+}
+
+img {
+    border: 0.5px solid black;
+    width: 90%;
+    max-width: 700px;
+}
+
+#mapimg{
+    display: block;
+    margin: 10px auto;
+}
+
+#typegrid{
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+
+}
+
+#typegrid p{
+    border: 1px solid gray;
+    margin: 0;
+    padding: 40px 5px;
+    text-align: center;
+    height: 20px;
+    align-items: center;
+}
+
+#thead, #thead2{
+    font-family: 'Ubuntu';
+    font-weight: 700;
+}
+
+#actual{
+    display: flex;
+    align-content: center;
+}
+
+#colors div{
+    padding: 0;
+    margin: 0 auto;
+}
+
+#colors p{ 
+    border-radius: 90px; 
+    text-align: center;
+    margin: 0 auto; 
+    margin: 37% 0;
+}
+
+#primary{
+    background-color: #aef1fa;
+    border-radius: 90px; 
+    width: 95px;
+    height: 95px;
+}
+
+#second{
+    background-color: #b9b9b9;
+    border-radius: 90px; 
+    vertical-align: middle;
+    width: 95px;
+    height: 95px;
+}
+
+#a1{
+    background-color: #fcf26e;
+    border-radius: 90px; 
+    vertical-align: middle;
+    width: 95px;
+    height: 95px;
+}
+
+#a2{
+    background-color: #f1f1f1;
+    border-radius: 90px; 
+    vertical-align: middle;
+    width: 95px;
+    height: 95px;
+}
+
+#wireframe img{
+    max-width: 500px;
+}
+
+#mv{
+    margin-top: 45px;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 650px) {
+    main {
+        
+    }
+}
+
+@media only screen and (min-width: 651px) {
+    main {
+       
+    }
+}
