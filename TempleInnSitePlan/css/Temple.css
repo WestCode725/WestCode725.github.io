@@ -115,8 +115,14 @@ img {
     height: 95px;
 }
 
+#wireframe p{
+    text-align: center;
+}
+
 #wireframe img{
     max-width: 500px;
+    margin: 0 auto;
+    display: block;
 }
 
 #mv{
