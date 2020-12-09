@@ -4,47 +4,76 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Storm Center</title>
+    <title>Grand Spires</title>
     <link rel="shortcut icon" href="images/WW.ico">
-    <meta name="description" content="The weather and news for Preston Idaho">
+    <meta name="description" content="The number one hotel for temple workers and families">
     <link rel="stylesheet" href="indexcss/normalize.css">
     <link rel="stylesheet" href="indexcss/home.css">
-    <script src="indexjs/home.js"></script>
+    <script src="Scripts/home.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Padauk&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
-        <header>
-            <img src="images/wweathericon.png" alt="Weather Weekly logo">
-            <div class="mainlogo">
-                <h1>Weather Weekly</h1>
-                <p><em>Southeast Idaho's number one place for all your local weather information.</em></p>
-                <div class="mainlogo">
-        </header>
-
+    <header>
+        <picture>
+            <source srcset="images/grandhome-small.jpg" media="(max-width: 449px)" type="image/jpeg">
+            <source srcset="images/grandhome-med.jpg" media="(min-width: 450px) and (max-width: 689px)">
+            <source srcset="images/grandhome.png" media="(min-width: 690px)">
+            <img src="images/grandhome.png" id="main-img">
+        </picture>
         <nav>
             <ul class="navigation">
-                <li><a href="#" class="menubutton">&#9776; Menu</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="preston.html">Preston</a></li>
-                <li><a href="SodaSprings.html">Soda Springs</a></li>
-                <li><a href="FishHaven.html">Fish Haven</a></li>
-                <li><a href="StormCenter.html">Storm Center</a></li>
-                <li><a href="weathergallery.html">Gallery</a></li>
+                <li><a href="#" id="menubutton">&#9776;</a></li>
+                <li><a href="#">HOME</a></li>
+                <li><a href="reservation.html">ONLINE RESERVATION</a></li>
+                <li><a href="Philadelphia.html">PHILADELPHIA LOCATION</a></li>
+                <li><a href="WashingtonDC.html">BETHESDA LOCATION</a></li>
+                <li><a href="Richmond.html">RICHMOND LOCATION</a></li>
+                <li><a href="Raleigh.html">RALEIGH LOCATION</a></li>
+                <li><a href="Services.html">SERVICES</a></li>
+                <li><a href="#">CONTACT US</a></li>
+
             </ul>
         </nav>
+        <img src="images/GrandSpireslogo.png" id="gslogo" alt="Grand Spires Logo">
+        <a href="#"><span id="envelope">&#9993;</span></a>
+        <a href="#"><span id="phone">&#9990;</span></a>
+        <h1>GRAND SPIRES</h1>
 
-        <main>
+    </header>
 
-           <div class="towns"></div>
 
-        </main>
 
-        <footer>
-                <p class="legal">&copy; <span id="copyrightyear"></span> | Weston Goodell | Idaho | <a
-                        href="https://www.byui.edu/online">BYUI Online Learning</a></p>
-                <p class="highlight">Last Updated: <span id="lastUpdated"></span></p>
-        </footer>
+    <main>
+        <a href="reservation.html" id="bookbutton">BOOK NOW</a>
+
+        <div id="description">
+            <img src="">
+            <p></p>
+        </div>
+
+        <div id="amenities">
+            <h2>Free Amenities</h2>
+            <p>Breakfast</p>
+            <p>Exercise/workout room</p>
+            <p>Indoor pool</p>
+            <p>WiFi high-speed internet access and smart TVs</p>
+            <p>Parking</p>
+            <p>Temple shuttle</p>
+            <a href="Services.html" id="servicebutton">See More</a>
+        </div>
+
+        <div id="temples">
+
+        </div>
+    </main>
+
+    <footer>
+        <p class="legal">&copy; <span id="copyrightyear"></span> | Weston Goodell | Idaho | <a
+                href="https://www.byui.edu/online">BYUI Online Learning</a></p>
+        <p class="highlight">Last Updated: <span id="lastUpdated"></span></p>
+    </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 
@@ -52,9 +81,12 @@
         WebFont.load({
             google: {
                 families: [
-                    'Poppins', 'Tillium Web'
+                    'Padauk', 'Ubuntu'
                 ]
             }
         });
     </script>
+
 </body>
+
+</html>

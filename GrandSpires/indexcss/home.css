@@ -3,53 +3,97 @@ body{
     width: 100%;
 }
 
-body p, body a{
-    font-family: 'Poppins', serif;
+body p, body a, button{
+    font-family: 'Padauk', serif;
 }
 
-h1, h2, h3, h4, h5{
-    font-family: 'Titillium Web', sans-serif;
+h1, h2, h3{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header h1, header h2, header h3{
+    color: white;
+    font-weight: 200;
+    margin: 19vw auto;
+    text-shadow: 0 0 6px black;
+    width: max-content;
 }
 
 header{
-    background: rgb(167,216,254);
-    background: linear-gradient(90deg, rgba(167,216,254,1) 1%, rgba(0,137,252,1) 46%, rgba(45,101,251,1) 98%);
-    background-size: 100%;
-    color: #222;
-    display: grid;
-    grid-template-columns: .5fr 1fr;
-    padding-bottom: 20px;
+    height: max-content;
 }
 
-header h1{
-    margin: 30px 0 0 20px;
+
+#main-img{
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: .7;
+    margin-top: -6px;
+}
+
+#gslogo{
+    width: 28%;
+    margin: 0 auto;
+    display: block;
+    position: absolute;
+    top: 15vw;
+    left: 37%;
+}
+
+#envelope{
+    font-size: 7vw;
+    text-align: center;
+    height: 8vw;
+    width: 9vw;
     color: white;
+    padding-top: 1vw;
+    position: absolute;
+    top: 15px;
+    right: 15vw;
+    border: 2px solid #c1c1c1;
+    border-radius: 70px;
+    background-color: #c1c1c1;
+    text-decoration: none;
 }
 
-header img{
-    justify-self: center;
-    align-self: center;
-    width: 80px;
-    height: 80px;
-}
-
-header p{
-    margin-left: 20px;
-    max-width: 600px;
+#phone{
+    font-size: 7vw;
+    text-align: center;
+    height: 8vw;
+    width: 9vw;
     color: white;
-    margin-right: 20px;
+    padding-top: 1vw;
+    position: absolute;
+    top: 15px;
+    right: 3vw;
+    border: 2px solid #c1c1c1;
+    border-radius: 70px;
+    background-color: #c1c1c1;
+    text-decoration: none;
 }
-
-
 
 /*     ---------------------   NAVIGATION   ------------------------ 
 
 */
 
+.responsive{
+    background-color: rgb(255, 255, 255);
+    opacity: .88;
+    z-index: 3;   
+}
+
+nav{
+    padding: 0px;
+}
+
+ul{
+    padding: 0;
+}
+
 .navigation{
     list-style: none;
-    padding: 0;
-    margin: 4px 0;
+    margin: 0;
 }
 
 .navigation li:nth-child(2){
@@ -61,6 +105,16 @@ header p{
     display: block;
     text-align: center;
     padding: 5px;
+    width: 48px;
+    font-size: 320%;
+}
+
+#menubutton{
+    color: white;
+}
+
+.responsive #menubutton{
+    color: #333;
 }
 
 .navigation li{
@@ -71,18 +125,17 @@ header p{
    padding: 8px; 
    display: block;
    text-decoration: none;
-   color: #333;
+   color: #4d8ae6;
 }
 
 .navigation a:visited{
-    color: #333;
+    color: #4d8ae6;
 }
 
 .responsive li{
     display: block;
     padding: 8px;
     text-align: center;
-    border: 1px solid #3D3D3D;
 }
 
 .navigation li:first-child a:hover{
@@ -95,61 +148,26 @@ header p{
     font-weight: 800;
 }
 
+/*---------------------     MAIN   ----------------------*/
 
-#storm-heading{
-    padding-left: 20px;
-}
-
-
-
-
-.editable p, .editable img{
+#bookbutton{
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    border: 1px solid #2bbce0;
+    background-color: #2bbce0;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    margin: 60% auto 0 auto;
     display: block;
 }
 
-
-img{
-    width: 100%;
-    max-width: 300px;
-    margin: 0 auto;
-}
-
-section img{
-    box-shadow: 0px 0px 14px 5px #555;
-}
-
-section{
-    box-shadow: 0px 0px 5px #333;
-}
-
-section{
-    border: 1px solid #555;
-    width: 80%;
-    max-width: 1000px;
-    padding: 20px;
-    margin: 20px auto;
-    text-align: center;
-    background-image: linear-gradient(#f7c377,#fdd47b ); 
-}
-
 main h2{
-    color: white;  
     font-size: 1.5em;
-    text-shadow: 1px 1px 1px #444;
 }
 
-.editable p:first-child{
-    font-style: italic;
-}
-
-main p, main img{
-    display: none;
-}
-
-
-
-/*   ----------------     FOOTER  ------------------------
-*/
+/*   ----------------     FOOTER  ------------------------*/
 
 footer {
     padding: 27px;
@@ -172,25 +190,11 @@ textarea{
 
 
 
-@media only screen and (min-width: 600px) and (max-width: 689px){
-    .towns{
-        display: grid;
-        grid-template-columns: 1fr;
-        margin: 20px;
-        gap: 20px;
-    }
-
-    section div{
-        padding: 20px;
-    }
-
-    div h2, div p, div img{
-        display: flex;
-        justify-content: center;
-    }
-
-    section{
-        display: flex;
+@media only screen and (min-width: 500px) and (max-width: 689px){
+    
+    #gslogo{
+        width: 20%;
+        left: 41%;
     }
 
     section:nth-child(odd){
@@ -206,6 +210,20 @@ textarea{
     }
 
 
+    #envelope{
+        font-size: 5vw;
+        height: 5vw;
+        width: 5.6vw;
+        padding-top: .5vw; 
+        right: 11vw;
+    }
+
+    #phone{
+        font-size: 5vw;
+        height: 5vw;
+        width: 5.6vw;
+        padding-top: .5vw; 
+    }
 }
 
 
@@ -213,36 +231,34 @@ textarea{
     
     .responsive li{
         border: none;
+        padding: 10px 0;
     }
 
-    .navigation {
-        display: flex;
-        
-    }
-
-    .navigation li{
-        display: block;
-        flex: 1 1 auto;
+    .responsive li:last-child{
+        padding-bottom: 120px;
     }
     
-    .menubutton{
-        display: none!important;
+    #gslogo{
+        width: 18%;
+        left: 41%;
+        top: 10vw;
     }
 
-    .towns{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 20px;
-        width: 100%;
-    }
-
-    .towns p, .towns img{
-        display: block;
-    }
-
-    main img{
-        margin: 0 auto;
-    }
   
+    #envelope{
+        font-size: 5vw;
+        height: 5vw;
+        width: 5.5vw;
+        padding-top: .5vw; 
+        right: 11vw;
+    }
+
+    #phone{
+        font-size: 5vw;
+        height: 5vw;
+        width: 5.5vw;
+        padding-top: .5vw; 
+    }
+
 } 
 
