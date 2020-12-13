@@ -178,10 +178,11 @@ main h2{
 
 #amencontainer{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: fit-content;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
     margin: 0 auto;
-    
+    justify-content: center;
+    align-content: center;
 }
 
 .amenities img{
@@ -191,13 +192,32 @@ main h2{
 .amenities{
     width: auto;
     height: 14px;
-    padding: 40px;
+    padding: 30px 8px;
     border: 1px solid gray;
     margin: 5px 10px;
     text-align: center;
     font-size: small;
     color: gray;
 }
+
+#servicebutton, #servicebutton:visited{
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    padding: 10px 5px;
+    color: #222;
+    border: 1px solid #facf8f;
+    width: 20%;
+    margin: 10px auto 40px auto;
+    background-color: #facf8f;
+    border-radius: 18px;
+    
+}
+
+
+
+
+
 /*   ----------------     FOOTER  ------------------------*/
 
 footer {
@@ -239,7 +259,6 @@ textarea{
         max-width: 220px;
     }
 
-
     #envelope{
         font-size: 5vw;
         height: 5vw;
@@ -254,6 +273,19 @@ textarea{
         width: 5.6vw;
         padding-top: .5vw; 
     }
+
+    #bookbutton{
+        margin-top: 22vw;
+    }
+
+    #amencontainer{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .amenities{
+        padding: 40px 5px;
+    }
+
 }
 
 
@@ -291,5 +323,26 @@ textarea{
         padding-top: .5vw; 
     }
 
+    #amencontainer{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .amenities{
+        padding: 40px 5px;
+    }
 } 
 
+
+@media only screen and (min-width: 690px) and (max-width: 890px) {
+
+#bookbutton{
+    margin-top: 12vw;
+}
+}
+
+@media only screen and (min-width: 891px) {
+
+    #bookbutton{
+        margin-top: 17vw;
+    }
+    }
