@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us</title>
+    <link rel="shortcut icon" href="images/WW.ico">
+    <meta name="description" content="Grand Spires online reservation page">
+    <link rel="stylesheet" href="Styles/normalize.css">
+    <link rel="stylesheet" href="Styles/contact.css">
+    <script src="Scripts/home.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Padauk&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div id="contact-page">
+        <header>
+            <div id="lobby">
+                <a href="home.html"><p><</p></a>
+                <img src="images/GrandSpireslogo.png">
+            </div>
+            <div class="mainlogo">
+                
+            </div>
+
+    </header>
+
+        <main>
+
+            <form action="contactthanks.html">
+                <div id="formheader">
+                <h3 class="section">CONTACT US</h3>
+                <h5>Call us at (240) 473 - 1667</h5>
+                <p>or fill out this form</p>
+                </div>
+                <div id="personalsec">
+                    <div class="form-box">
+                        <label for="fName">First Name</label>
+                        <input type="text" required id="fName" name="fName" placeholder="First Name"
+                            pattern="[A-Za-z]{5,}">
+                    </div>
+
+                    <div class="form-box">
+                        <label for="lName">Last Name</label>
+                        <input type="text" required id="lName" name="lName" placeholder="Last Name" minlength="5"
+                            pattern="[A-Za-z]{5,}">
+                    </div>
+
+                    <div class="form-box">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" minlength="5" placeholder="Email Address">
+                    </div>
+
+                    <div class="form-box">
+                        <label for="telnum">Phone Number</label>
+                        <input type="tel" required id="telnum" name="phonenumber" minlength="5"
+                            placeholder="Phone Number">
+                    </div>
+                </div>
+
+                <div class="form-box2">
+                    <label for="st">Hotel Location</label>
+                    <input type="text" name="hotellocation" required id="st" list="loc">
+
+                    <datalist id="loc">
+                        <option>Philadelphia</option>
+                        <option>Bethesda</option>
+                        <option>Richmond</option>
+                        <option>Raleigh</option>
+                    </datalist>
+                </div>
+
+                <div class="form-box2">
+                    <textarea name="addcomments" placeholder="What's going on?" rows="6"></textarea>
+                </div>
+
+                    <input id="submit" value="SUBMIT" type="submit">
+            </form>
+
+
+            <div id="contact">
+
+                <div id="footer">
+                    <p class="legal">&copy; <span id="copyrightyear"></span> | Weston Goodell | Idaho | <a
+                            href="https://www.byui.edu/online">BYUI Online Learning</a></p>
+                    <p class="highlight">Last Updated: <span id="lastUpdated"></span></p>
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Poppins', 'Tillium Web'
+                ]
+            }
+        });
+    </script>
+</body>

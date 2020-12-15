@@ -38,7 +38,6 @@ header{
     display: block;
     position: relative;
     top: 15vw;
-
 }
 
 #envelope{
@@ -80,7 +79,7 @@ header{
 .responsive{
     background-color: rgb(255, 255, 255);
     opacity: .88;
-    z-index: 3;   
+    z-index: 3;  
 }
 
 nav{
@@ -155,8 +154,8 @@ ul{
     font-weight: 400;
     font-size: x-large;
     text-decoration: none;
-    border: 1px solid #2bbce0;
-    background-color: #2bbce0;
+    border: 1px solid #27a0be;
+    background-color: #27a0be;
     text-align: center;
     padding: 10px;
     margin: 26vw auto 0 auto;
@@ -164,8 +163,8 @@ ul{
 }
 
 #bookbutton:hover{
-    background-color: #2c869c;
-    border: 1px solid #2c869c;
+    background-color: #66c9e2;
+    border: 1px solid #66c9e2;
 }
 
 main h2{

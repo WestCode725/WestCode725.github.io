@@ -1,0 +1,246 @@
+body{
+    margin: 0 auto;
+    width: 100%;
+}
+
+body p, body a, button{
+    font-family: 'Padauk', serif;
+}
+
+h1, h2, h3{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header h1, header h2, header h3{
+    color: white;
+    font-weight: 200;
+    margin: 19vw auto;
+    text-shadow: 0 0 6px black;
+    width: fit-content;
+    font-size: 28px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header{
+    height: max-content;
+}
+
+
+#temp--banner{
+    width: 100%;
+    top: 0;
+    z-index: -1;
+    opacity: .7;
+}
+
+/*     ---------------------   NAVIGATION   ------------------------ 
+
+*/
+
+.responsive{
+    background-color: rgb(255, 255, 255);
+    opacity: .92;
+    z-index: 3;
+    height: 130%;  
+}
+
+nav{
+    padding: 0px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+ul{
+    padding: 0 0 10% 0;
+}
+
+.navigation{
+    list-style: none;
+    margin: 0;
+}
+
+.navigation li:nth-child(4){
+    font-weight: 800;
+    text-shadow: 0 0 gray;
+}
+
+.navigation li:first-child{
+    display: block;
+    text-align: center;
+    padding: 5px;
+    width: 48px;
+    font-size: 320%;
+}
+
+#menubutton{
+    color: white;
+}
+
+.responsive #menubutton{
+    color: #333;
+}
+
+.navigation li{
+    display: none; 
+}
+
+.navigation a{
+   padding: 8px; 
+   display: block;
+   text-decoration: none;
+   color: #4d8ae6;
+}
+
+.navigation a:visited{
+    color: #4d8ae6;
+}
+
+.responsive li{
+    display: block;
+    padding: 8px;
+    text-align: center;
+}
+
+.navigation li:first-child a:hover{
+    color: #2F2F25;
+    font-weight: 800;
+}
+
+.navigation li:hover{
+    color: #6F6F65;
+    font-weight: 800;
+}
+
+/*---------------------     MAIN   ----------------------*/
+
+#bookbutton{
+    color: white;
+    font-weight: 400;
+    font-size: x-large;
+    text-decoration: none;
+    border: 1px solid #27a0be;
+    background-color: #27a0be;
+    text-align: center;
+    padding: 10px;
+    margin: 26vw auto 0 auto;
+    display: block;
+}
+
+#bookbutton:hover{
+    background-color: #66c9e2;
+    border: 1px solid #66c9e2;
+}
+
+main h2{
+    font-size: 1.5em;
+}
+
+
+
+
+
+
+
+
+
+
+/*   ----------------     FOOTER  ------------------------*/
+
+footer {
+    padding: 27px;
+    text-align: center;
+    margin-top: 15%;
+    background-color: #DEDEDE;
+    }
+
+
+footer p{
+    margin-bottom: 9px;
+    font-size: 90%;
+    text-align: center;
+}
+
+
+
+@media only screen and (min-width: 500px) and (max-width: 689px){
+    
+    #gslogo{
+        width: 20%;
+    }
+
+    section:nth-child(odd){
+        flex-direction: row-reverse;
+    }
+
+    section img{
+        justify-self: center;
+        align-self: center;
+        margin: 0 auto;
+        width: 60%;
+        max-width: 220px;
+    }
+
+}
+
+
+@media only screen and (min-width: 690px) {
+    header h1{
+        margin: 20px auto;
+    }
+
+    .responsive li{
+        border: none;
+        padding: 10px 0;
+    }
+
+    .responsive li:last-child{
+        padding-bottom: 120px;
+    }
+    
+    #gslogo{
+        width: 18%;
+        top: 6vw;
+    }
+  
+    #envelope{
+        font-size: 5vw;
+        height: 5vw;
+        width: 5.5vw;
+        padding-top: .5vw; 
+        right: 11vw;
+    }
+
+    #phone{
+        font-size: 5vw;
+        height: 5vw;
+        width: 5.5vw;
+        padding-top: .5vw; 
+    }
+
+    #amencontainer{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .amenities{
+        padding: 40px 5px;
+    }
+} 
+
+
+@media only screen and (min-width: 690px) and (max-width: 890px) {
+
+#bookbutton{
+    margin-top: 12vw;
+}
+}
+
+@media only screen and (min-width: 891px) {
+
+    #bookbutton{
+        margin-top: 17vw;
+    }
+    }

@@ -1,0 +1,90 @@
+#lobby{
+    background: url(../images/GSlobbysmall.jpg) center no-repeat;
+    width: 100%;
+    height: 250px;
+    color: white;
+    font-family: 'Ubuntu';
+}
+
+#backhome, #backhome p{
+    display: inline;
+}
+
+#lobby img{
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+#lobby p{
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    margin: 0;
+    padding-top: 2px;
+    padding-right: 1px;
+    font-size: large;
+    border: 1.5px solid white;
+    color: white;
+    border-radius: 30px;
+    height: 22px;
+    width: 23px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+#lobby p:visited{
+    color: white;
+}
+
+form{
+    margin: -50px auto 0 auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px 10px 0 0;
+    max-width: 550px;
+    min-width: 230px;
+}
+
+#formheader{
+    text-align: center;
+    font-family: 'Ubuntu';
+}
+
+.form-box{
+    font-family: 'Padauk';
+    display: block;
+}
+
+.form-box label{
+    width: 100%;
+}
+
+.form-box input{
+    border: 1.5px solid #8F8F8F;
+    display: block;
+    width: 95%;
+    padding-left: 20px;
+    border-radius: 4px;
+    height: 46px;
+    margin: 10px 0 30px 0;
+}
+
+textarea{
+    width: 100%;
+    margin-top: 20px;
+}
+
+#submit{
+    text-align: center;
+    display: block;
+    margin: 20px auto;
+    padding: 16px 35px;
+    background-color: #377dac;
+    color: white;
+    font-family: 'Ubuntu';
+    border: 1px solid #377dac;
+    border-radius: 5px;
+}
