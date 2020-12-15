@@ -14,26 +14,31 @@
 </head>
 
 <body>
-    <div class="storm-page">
+    <div class="reserve-page">
         <header>
-            <img src="images/GrandSpireslogo.png" alt="Weather Weekly logo">
+            <picture>
+                <source srcset="images/reserve-small.jpg" media="(max-width: 500px)" type="image/jpeg">
+                <source srcset="images/reserve-med.jpg" media="(min-width: 501px) and (max-width: 689px)">
+                <source srcset="images/reserve.jpg" media="(min-width: 690px)">
+                <img src="images/reserve.jpg" id="reserve-main">
+            </picture>
             <div class="mainlogo">
                 <h1>GRAND SPIRES</h1>
-                <p><em>Southeast Idaho's number one place for all your local weather information.</em></p>
+                    <img id="logo" src="images/GrandSpireslogo.png">    
             </div>
-    
+
 
             <nav>
                 <ul class="navigation">
                     <li><a href="#" id="menubutton">&#9776;</a></li>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="reservation.html">ONLINE RESERVATION</a></li>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="#">ONLINE RESERVATION</a></li>
                     <li><a href="temples.html">TEMPLE INFORMATION</a></li>
                     <li><a href="Services.html">SERVICES</a></li>
                     <li><a href="contact.html">CONTACT US</a></li>
                 </ul>
             </nav>
-    </header>
+        </header>
 
         <main>
 
@@ -114,7 +119,7 @@
                     </div>
 
 
-                   
+
 
                     <input id="submit" value="Submit" type="submit">
             </form>

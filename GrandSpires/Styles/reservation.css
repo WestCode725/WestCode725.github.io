@@ -3,36 +3,26 @@ body{
     width: 100%;
 }
 
-body p, body a{
-    font-family: 'Poppins', serif;
+body p, body a, button{
+    font-family: 'Padauk', serif;
 }
 
-h1, h2, h3, h4, h5{
-    font-family: 'Titillium Web', sans-serif;
+h1, h2, h3{
+    font-family: 'Ubuntu', sans-serif;
 }
 
-.storm-page{
-    background-color: #FFF;
+header h1, header h2, header h3{
+    color: white;
+    font-weight: 200;
+    margin: 19vw auto;
+    text-shadow: 0 0 6px black;
+    width: max-content;
 }
 
-.banner{
-    text-align: center;
-    background-color: khaki;
-    margin: 0;
-    padding: 10px;
+header{
+    height: max-content;
 }
 
-header h1{
-    margin: 30px 0 0 20px;
-}
-
-header img{
-    justify-self: center;
-    align-self: center;
-    width: 80px;
-    height: 80px;
-    margin-right: -20%;
-}
 
 header p{
     margin-left: 20px;
@@ -41,19 +31,41 @@ header p{
     margin-right: 20px;
 }
 
+#reserve-main{
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: .7;
+    top: 0;
+}
+
+#logo{
+    width: 33vw;
+    
+}
+/*       ----------- navigation section -------------- */
 
 
-/*        navigation section 
+.responsive{
+    background-color: rgb(255, 255, 255);
+    opacity: .88;
+    z-index: 3;  
+}
 
-*/
+nav{
+    padding: 0px;
+}
+
+ul{
+    padding: 0;
+}
 
 .navigation{
     list-style: none;
-    padding: 0;
-    margin: 4px 0;
+    margin: 0;
 }
 
-.navigation li:nth-child(6){
+.navigation li:nth-child(2){
     font-weight: 800;
     text-shadow: 0 0 gray;
 }
@@ -62,6 +74,16 @@ header p{
     display: block;
     text-align: center;
     padding: 5px;
+    width: 48px;
+    font-size: 320%;
+}
+
+#menubutton{
+    color: white;
+}
+
+.responsive #menubutton{
+    color: #333;
 }
 
 .navigation li{
@@ -72,18 +94,17 @@ header p{
    padding: 8px; 
    display: block;
    text-decoration: none;
-   color: #333;
+   color: #4d8ae6;
 }
 
 .navigation a:visited{
-    color: #333;
+    color: #4d8ae6;
 }
 
 .responsive li{
     display: block;
     padding: 8px;
     text-align: center;
-    border: 1px solid #3D3D3D;
 }
 
 .navigation li:first-child a:hover{
@@ -95,13 +116,6 @@ header p{
     color: #6F6F65;
     font-weight: 800;
 }
-
-
-#storm-heading{
-    padding-left: 20px;
-}
-
-
 
 /*----------------------------- FORM ----------------------
 */
