@@ -14,9 +14,8 @@ h1, h2, h3{
 header h1, header h2, header h3{
     color: white;
     font-weight: 200;
-    margin: 19vw auto;
     text-shadow: 0 0 6px black;
-    width: max-content;
+    font-size: 1.5em;
 }
 
 header{
@@ -39,25 +38,36 @@ header p{
     top: 0;
 }
 
+.mainlogo{
+    margin: 30px auto;
+    width: fit-content;
+    text-align: center;
+}
+
+.mainlogo h1{
+    margin: 50px 0 -10px 0;
+}
+
 #logo{
     width: 33vw;
-    
+    margin-top: -20px;
 }
 /*       ----------- navigation section -------------- */
 
 
 .responsive{
     background-color: rgb(255, 255, 255);
-    opacity: .88;
+    opacity: .94;
     z-index: 3;  
+    border-bottom: 1px solid #333;
+    padding-bottom: 70px;
 }
 
 nav{
     padding: 0px;
-}
-
-ul{
-    padding: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
 }
 
 .navigation{
@@ -121,12 +131,13 @@ ul{
 */
 
 form{
-    margin: 70px auto;
+    margin: 70px auto 0 auto;
     flex-direction: column;
-    width: 85%;
-    max-width: 550px;
-    min-width: 230px;
-    font-family: "Poppins";
+    max-width: 650px;
+    font-family: "Padauk";
+    background-color: white;
+    padding: 45px;
+    border-radius: 14px 14px 0 0;
 }
 
 .form-box{
@@ -140,7 +151,6 @@ form{
 }
 
 .form-box2 label{
-    flex-basis: 7rem;
     padding-right: 8px;
 }
 
@@ -148,7 +158,7 @@ input{
     padding: 5px;
     border: 1px solid #bbb;
     border-radius: 6px 6px;
-    font-size: small;
+    font-size: 20px;
 }
 
 
@@ -157,28 +167,12 @@ input{
     min-width: 200px;
 }
 
-#personalsec label{
+#personalsec label, #cardsection label{
     display: none;
 }
 
 label, button{
-    font-size: small;
     color: #474747;
-}
-
-.dangerclass{
-    display: flex;
-    align-items: center;
-}
-
-.dangerclass input{
-    margin: 8px;
-}
-
-#stormsev{
-    width: 100%;
-    max-width: 200px;
-    
 }
 
 option, select{
@@ -212,24 +206,21 @@ option, select{
     color: maroon;
 }
 
-
-#contact{
-    background-color: #DEDEDE;
-    padding: 19px;
-}
-
 textarea{
     width: 80%;
     font-size: small;
 }
 
 #submit{
-    padding: 12px;
-    border-radius: 4px 4px;
-    margin: 0 auto;
-    width: 100px;
+    text-align: center;
     display: block;
-    background-color: #B2BAE2;
+    margin: 35px auto;
+    padding: 16px 35px;
+    background-color: #377dac;
+    color: white;
+    font-family: 'Ubuntu';
+    border: 1px solid #377dac;
+    border-radius: 5px;
 }
 
 #thanks{
@@ -237,40 +228,20 @@ textarea{
 }
 
 @media only screen and (min-width: 420px){
-    #personalsec label{
+    #personalsec label, #cardsection label{
         display: block;
     }
 
     label{
-        margin-bottom: 8px;
         margin-left: 7px;
     }
 }
 
 
 @media only screen and (min-width: 590px){
-    
-    main h2{
-        border: 0;
-    }
 
-    .navigation {
-        display: flex;
-        
-    }
-
-    .navigation li{
-        display: block;
-        flex: 1 1 auto;
-    }
-    
-    .menubutton{
-        display: none!important;
-    }
-
-    form{
-        border: 1px solid gray;
-        padding: 35px;
+    #logo{
+        width: 20vw;
     }
 
     .form-box{
@@ -299,3 +270,11 @@ textarea{
     }
 } 
 
+
+@media only screen and (min-width: 650px){
+form{
+    border: 1px solid gray;
+    margin-bottom: 20px;
+    border-radius: 14px;
+    }
+}

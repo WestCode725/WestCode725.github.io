@@ -1,8 +1,47 @@
-
-#gslogo{
-    width: 22%;
+body{
     margin: 0 auto;
-    display: block;
+    width: 100%;
+}
+
+body p, body a, button{
+    font-family: 'Padauk', serif;
+}
+
+h1, h2, h3{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+header{
+    height: max-content;
+}
+
+
+header p{
+    margin-left: 20px;
+    max-width: 600px;
+    color: white;
+    margin-right: 20px;
+}
+
+#service-main{
+    width: 100%;
+    z-index: -1;
+    opacity: .7;
+    top: 0;
+}
+
+.mainlogo h1{
+    margin: 50px 0 -10px 0;
+}
+
+#logo{
+    width: 105px;  
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    right: 10px;
 }
 
 
@@ -12,21 +51,23 @@
 
 .responsive{
     background-color: rgb(255, 255, 255);
-    opacity: .88;
+    opacity: .94;
     z-index: 3;  
+    border-bottom: 1px solid #333;
+    padding-bottom: 70px;
 }
 
 nav{
     padding: 0px;
-}
-
-ul{
-    padding: 0;
+    position: absolute;
+    top: 10px;
+    width: 100%;
 }
 
 .navigation{
     list-style: none;
     margin: 0;
+    padding-left: 0;
 }
 
 .navigation li:nth-child(2){
@@ -69,6 +110,7 @@ ul{
     display: block;
     padding: 8px;
     text-align: center;
+    z-index: 6;
 }
 
 .navigation li:first-child a:hover{
@@ -79,4 +121,137 @@ ul{
 .navigation li:hover{
     color: #6F6F65;
     font-weight: 800;
+}
+
+/* ----------------------- MAIN  --------------------- */
+
+#amenimg{
+    width: 100%;
+    display: inline-block;
+    margin: 0;
+}
+
+#amenhead{
+    padding: 20px 80px;
+    margin: 0;
+    background-color: #2F2F2F;
+    color: white;
+}
+
+#amenlist{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20px auto;
+    font-family: 'Padauk';
+    background-color: #efefef;
+    margin-top: -5px;
+    padding-top: 20px;
+    color: #333;
+    border-bottom: 1px solid #444;
+}
+
+#amenlist h4{
+    margin: 0;
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+#amenlist ul{
+    grid-row: 2;
+}
+
+#extra{
+    text-align: center;
+}
+
+#extragrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    gap: 20px;
+    margin: 0 auto;
+}
+
+.special{
+    width: 100%;
+    position: relative;
+}
+
+.special img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: 0.5s ease;
+    backface-visibility: hidden; 
+    box-shadow: 0 0 5px #333; 
+}
+
+.centered{
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%;
+    font-family: 'Padauk';
+}
+
+.special:hover img{
+    opacity: .2;
+}
+
+.special:hover .centered{
+    opacity: 1;
+}
+
+@media only screen and (min-width: 590px){
+
+
+}
+
+@media only screen and (min-width: 970px){
+    #amensection{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        margin-top: 5%;
+        border-top: 1px solid #444;
+        border-bottom: 1px solid #444;
+        
+    }
+    
+    #amenimg{
+        width: 100%;
+        display: inline-block;
+        margin: 0;
+        height: 100%;
+    }
+
+    #amenlist{
+        font-size: small;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 20px auto;
+        font-family: 'Padauk';
+        margin-top: 0;
+        border-bottom: none;
+    }
+    
+    #amenlist h4{
+        margin: 0;
+        grid-column: 1 / -1;
+        text-align: center;
+    }
+    
+    #amenlist ul{
+        grid-row: 2;
+    }
+}
+
+@media only screen and (min-width: 1100px){
+    #amenlist{
+        font-size: 16px;
+    }
 }

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="Styles/normalize.css">
     <link rel="stylesheet" href="Styles/reservation.css">
     <script src="Scripts/home.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Padauk&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
 
 </head>
 
@@ -17,9 +18,9 @@
     <div class="reserve-page">
         <header>
             <picture>
-                <source srcset="images/reserve-small.jpg" media="(max-width: 500px)" type="image/jpeg">
-                <source srcset="images/reserve-med.jpg" media="(min-width: 501px) and (max-width: 689px)">
-                <source srcset="images/reserve.jpg" media="(min-width: 690px)">
+                <source srcset="images/reserve-small.jpg" media="(max-width: 549px)" type="image/jpeg">
+                <source srcset="images/reserve-med.jpg" media="(min-width: 650px) and (max-width: 789px)">
+                <source srcset="images/reserve.jpg" media="(min-width: 790px)">
                 <img src="images/reserve.jpg" id="reserve-main">
             </picture>
             <div class="mainlogo">
@@ -100,39 +101,29 @@
                     </datalist>
                 </div>
 
-                <h3>Credit Card Information</h3>
-                <div class="form-box2">
+                <h3 class="section">Credit Card Information</h3>
+                <div id="cardsection" class="form-box2">
                     <div class="form-box">
-                        <label for="Name">Name on Card</label>
-                        <input type="text" required id="cardname" name="Name" placeholder="name on card"
+                        <label for="Name">Name On Card</label>
+                        <input type="text" required id="cardname" name="Name" placeholder="Name On Card"
                             pattern="[A-Za-z]">
                     </div>
 
                     <div class="form-box">
                         <label for="card">Card Number</label>
-                        <input type="number" required id="cardname" name="card" pattern="[A-Za-z]">
+                        <input type="number" required id="cardnum" name="card" placeholder="Card Number" pattern="[A-Za-z]">
                     </div>
 
                     <div class="form-box">
                         <label for="expdate">Expiration Date</label>
-                        <input type="text" required id="cardname" name="expdate" pattern="[A-Za-z]">
+                        <input type="text" required id="cardname" name="expdate" placeholder="Expiration Date" pattern="[A-Za-z]">
                     </div>
 
 
-
-
                     <input id="submit" value="Submit" type="submit">
+                </div>
             </form>
 
-
-            <div id="contact">
-
-                <div id="footer">
-                    <p class="legal">&copy; <span id="copyrightyear"></span> | Weston Goodell | Idaho | <a
-                            href="https://www.byui.edu/online">BYUI Online Learning</a></p>
-                    <p class="highlight">Last Updated: <span id="lastUpdated"></span></p>
-                </div>
-            </div>
         </main>
 
     </div>

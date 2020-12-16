@@ -1,0 +1,59 @@
+{
+  "temples": [{
+      "name": "Raleigh, North Carolina",
+      "photo": "raleightemple.jpeg",
+      "address": "574 Bryan Dr Apex NC, 27502, United States",
+      "telephone": "919-362-4135",
+      "email": "raleighnctemple@ldsmail.org",
+      "ordinanceSchedule": "M-S 9AM - 7PM",
+      "sessionSchedule": "M-S 9AM - 8PM",
+      "services": [
+        "Cafeteria: No cafeteria available",
+        "Housing: Grand Spires Hotel in Operation",
+        "Distribution: No distribution center nearby"
+      ]
+    },
+    {
+      "name": "Philidelphia, Pennsylvnia",
+      "photo": "philadelphiapennsylvania.jpeg",
+      "address": "1739 Vine St Philadelphia PA, 19103, United States",
+      "telephone": "215-398-3040",
+      "email": "philadelphiapa@ldsmail.org",
+      "ordinanceSchedule": "Not Currently Available",
+      "sessionSchedule": "M-F 12PM - 6PM",
+      "services": [
+        "Cafeteria: No cafeteria available",
+        "Housing: Grand Spires Hotel in Operation",
+        "Distribution: No distribution center nearby"
+      ]
+    },
+    {
+      "name": "Washington D.C.",
+      "photo": "washingtonDCtemple.jpeg",
+      "address": "9900 Stoneybrook Dr Kensington MD 20895 United States",
+      "telephone": "202-476-2267",
+      "email": "washingtondc@ldsmail.org",
+      "ordinanceSchedule": "Not Currently Available",
+      "sessionSchedule": "Not Currently Available",
+      "services": [
+        "Cafeteria: No cafeteria available",
+        "Housing: Grand Spires Hotel in Operation",
+        "Distribution: No distribution center nearby"
+      ]
+    },
+    {
+      "name": "Richmond, Virginia",
+      "photo": "richmondtemple.jpeg",
+      "address": "4236 Angus Rd, Richmond, VA 23234, United States",
+      "telephone": "703-982-2125",
+      "email": "richmondvatemple@ldsmail.org",
+      "ordinanceSchedule": "Not Currently Available",
+      "sessionSchedule": "M-S 9AM - 8PM",
+      "services": [
+        "Cafeteria: No cafeteria available",
+        "Housing: Grand Spires Hotel in Operation",
+        "Distribution: No distribution center nearby"
+      ]
+    }
+  ]
+}
