@@ -16,7 +16,7 @@ window.addEventListener('load', (event) => {
 });
 
 
-const requestURL = 'https://www.churchofjesuschrist.org/temples/details/raleigh-north-carolina-temple?lang=eng';
+const requestURL = 'https://westcode725.github.io/GrandSpires/Scripts/temples.json#';
 
 fetch(requestURL)
     .then(function (response) {
@@ -24,69 +24,53 @@ fetch(requestURL)
     })
     .then(function (jsonObject) {
         console.table(jsonObject);
-        const towns = jsonObject['towns'];
+        const temples = jsonObject['temples'];
    
-        for (i = 0; i < towns.length; i++) {
-            if (towns[i].name == "Fish Haven" || towns[i].name == "Preston" || towns[i].name == "Soda Springs"){
-            var town = document.createElement('section');
+        for (i = 0; i < temples.length; i++) {
+            if (temples[i].name == "Raleigh, North Carolina" || temples[i].name == "Philidelphia, Pennsylvnia" 
+            || temples[i].name == "Washington D.C." || temples[i].name == "Richmond, Virginia"){
+            var temple = document.createElement('section');
             var div = document.createElement('div');
-            var h2 = document.createElement('h2');
+            var h2 = document.createElement('h2'); 
+            var picture = document.createElement('img');
             var p1 = document.createElement('p');
             var p2 = document.createElement('p');
             var p3 = document.createElement('p');
             var p4 = document.createElement('p');
-            var picture = document.createElement('img');
+            var p5 = document.createElement('p');
+            var p6 = document.createElement('p');
+            var p7 = document.createElement('p');
+            var p8 = document.createElement('p');
             
             
-            town.id = towns[i].photo.substring(0, (towns[i]["photo"].length - 4));
-            h2.textContent = towns[i].name;
-            p1.textContent = towns[i].motto;
-            p2.textContent = "Year founded: " + towns[i].yearFounded; 
-            p3.textContent = "Population: " + towns[i].currentPopulation;
-            p4.textContent = "Annual Rain Fall: " + towns[i].averageRainfall;  
-            picture.setAttribute("src", "images/" + towns[i].photo);
-            picture.setAttribute("alt", towns[i].name);
+            temple.id = temples[i].photo.substring(0, (temples[i]["photo"].length - 5));
+            h2.textContent = temples[i].name;  
+            picture.setAttribute("src", "images/" + temples[i].photo);
+            picture.setAttribute("alt", temples[i].name);
+            p1.textContent = "Address: " + temples[i].address; 
+            p2.textContent = "Telephone: " + temples[i].telephone;
+            p3.textContent = "Email Address: " + temples[i].email;  
+            p4.textContent = "Ordinance Schedule: " + temples[i].ordinanceSchedule;
+            p5.textContent = "Session Schedule: " + temples[i].sessionSchedule;
+            p6.textContent =  temples[i].services[0];
+            p7.textContent =  temples[i].services[1]; 
+            p8.textContent =  temples[i].services[2]; 
            
         
-            town.appendChild(div);
+            temple.appendChild(div);
             div.appendChild(h2);
+            temple.appendChild(picture);
             div.appendChild(p1);
             div.appendChild(p2);
             div.appendChild(p3);
             div.appendChild(p4);
-            town.appendChild(picture);
+            div.appendChild(p5);
+            div.appendChild(p6);
+            div.appendChild(p7);
+            div.appendChild(p8);
+            
 
-            document.querySelector('div.towns').appendChild(town);
+            document.querySelector('div.temples').appendChild(temple);
         
         }}
-
-           window.addEventListener('load', (event) => {
-
-           const fish = document.querySelector('#fishhaven');
-        
-            fish.addEventListener('click', () => {
-                fish.classList.toggle('editable')
-            }, false);
-        });
-
-
-        window.addEventListener('load', (event) => {
-
-            const fish = document.querySelector('#preston');
-        
-            fish.addEventListener('click', () => {
-                fish.classList.toggle('editable')
-            }, false);
-        });
-
-
-        window.addEventListener('load', (event) => {
-
-            const fish = document.querySelector('#sodasprings');
-        
-            fish.addEventListener('click', () => {
-                fish.classList.toggle('editable')
-            }, false);
-        });
-       
-    })
+})

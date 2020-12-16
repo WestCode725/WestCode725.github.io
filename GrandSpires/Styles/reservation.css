@@ -70,12 +70,15 @@ nav{
     width: 100%;
 }
 
+nav ul{
+    padding: 0px;
+}
 .navigation{
     list-style: none;
     margin: 0;
 }
 
-.navigation li:nth-child(2){
+.navigation li:nth-child(3){
     font-weight: 800;
     text-shadow: 0 0 gray;
 }
@@ -171,7 +174,7 @@ input{
     display: none;
 }
 
-label, button{
+label{
     color: #474747;
 }
 
@@ -181,6 +184,10 @@ option, select{
 
 .section{
     margin-left: -2%;
+}
+
+button{
+    font-family: "Padauk";
 }
 
 /*        footer section

@@ -14,30 +14,35 @@ h1, h2, h3{
 header h1, header h2, header h3{
     color: white;
     font-weight: 200;
-    margin: 19vw auto;
     text-shadow: 0 0 6px black;
     width: max-content;
+    position: absolute;
+    top: 180px;
+    left: 50%;
+    transform: translate(-50%, -80px);
 }
 
 header{
     height: max-content;
 }
 
+#mainlogo{
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, -20px);
+}
 
 #main-img{
     width: 100%;
-    position: absolute;
     z-index: -1;
     opacity: .7;
-    margin-top: -6px;
 }
 
 #gslogo{
-    width: 38%;
+    width: 150px;
     margin: 0 auto;
-    display: block;
-    position: relative;
-    top: 15vw;
+    z-index: 0;
 }
 
 #envelope{
@@ -76,20 +81,25 @@ header{
 
 */
 
+
 .responsive{
     background-color: rgb(255, 255, 255);
-    opacity: .88;
+    opacity: .94;
     z-index: 3;  
+    border-bottom: 1px solid #333;
+    padding-bottom: 70px;
 }
 
 nav{
     padding: 0px;
+    position: absolute;
+    top: 0;
+    width: 100%;
 }
 
-ul{
-    padding: 0;
+nav ul{
+    padding: 0px;
 }
-
 .navigation{
     list-style: none;
     margin: 0;
@@ -158,7 +168,7 @@ ul{
     background-color: #27a0be;
     text-align: center;
     padding: 10px;
-    margin: 26vw auto 0 auto;
+    margin-top: -6px;
     display: block;
 }
 
@@ -204,16 +214,32 @@ main h2{
     text-decoration: none;
     display: block;
     padding: 10px 5px;
-    color: #222;
-    border: 1px solid #facf8f;
+    color: white;
+    border: 1px solid #424242;
     width: 20%;
     margin: 10px auto 40px auto;
-    background-color: #facf8f;
-    border-radius: 18px;
+    background-color: #424242;
+    border-radius: 10px;
     
 }
 
+main h3{
+    text-align: center;
+    margin-top: 85px;
+}
 
+#temples{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 95%;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+#temples img{
+    width: 100%;
+    box-shadow: 0 0 4px black;
+}
 
 
 
@@ -242,10 +268,6 @@ textarea{
 
 @media only screen and (min-width: 500px) and (max-width: 689px){
     
-    #gslogo{
-        width: 20%;
-    }
-
     section:nth-child(odd){
         flex-direction: row-reverse;
     }
@@ -273,10 +295,6 @@ textarea{
         padding-top: .5vw; 
     }
 
-    #bookbutton{
-        margin-top: 22vw;
-    }
-
     #amencontainer{
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -301,11 +319,7 @@ textarea{
     .responsive li:last-child{
         padding-bottom: 120px;
     }
-    
-    #gslogo{
-        width: 18%;
-        top: 6vw;
-    }
+
   
     #envelope{
         font-size: 5vw;
@@ -329,19 +343,8 @@ textarea{
     .amenities{
         padding: 40px 5px;
     }
+
+    #temples{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 } 
-
-
-@media only screen and (min-width: 690px) and (max-width: 890px) {
-
-#bookbutton{
-    margin-top: 12vw;
-}
-}
-
-@media only screen and (min-width: 891px) {
-
-    #bookbutton{
-        margin-top: 17vw;
-    }
-    }

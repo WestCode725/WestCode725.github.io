@@ -14,7 +14,7 @@ h1, h2, h3{
 header h1, header h2, header h3{
     color: white;
     font-weight: 200;
-    margin: 19vw auto;
+    position: absolute;
     text-shadow: 0 0 6px black;
     width: fit-content;
     font-size: 28px;
@@ -26,12 +26,12 @@ header h1, header h2, header h3{
 
 header{
     height: max-content;
+    margin-bottom: 20px;
 }
 
 
 #temp--banner{
     width: 100%;
-    top: 0;
     z-index: -1;
     opacity: .7;
 }
@@ -117,35 +117,37 @@ ul{
 
 /*---------------------     MAIN   ----------------------*/
 
-#bookbutton{
-    color: white;
-    font-weight: 400;
-    font-size: x-large;
-    text-decoration: none;
-    border: 1px solid #27a0be;
-    background-color: #27a0be;
-    text-align: center;
-    padding: 10px;
-    margin: 26vw auto 0 auto;
-    display: block;
-}
-
-#bookbutton:hover{
-    background-color: #66c9e2;
-    border: 1px solid #66c9e2;
-}
-
 main h2{
     font-size: 1.5em;
 }
 
+main h3{
+    text-align: center;
+    background-color: #eca74c;
+    padding: 8px;
+    width: 90%;
+    margin: 10px auto;
+}
 
+.temples p{
+    text-align: left;
+    margin: 7px 0;
+}
 
+.temples img{
+    width: 100%;
+    max-width: 460px;
+    display: block;
+    margin: 0 auto;
+}
 
-
-
-
-
+section{
+    padding: 20px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px black;
+    border-radius: 10px;
+}
 
 
 /*   ----------------     FOOTER  ------------------------*/
@@ -168,21 +170,6 @@ footer p{
 
 @media only screen and (min-width: 500px) and (max-width: 689px){
     
-    #gslogo{
-        width: 20%;
-    }
-
-    section:nth-child(odd){
-        flex-direction: row-reverse;
-    }
-
-    section img{
-        justify-self: center;
-        align-self: center;
-        margin: 0 auto;
-        width: 60%;
-        max-width: 220px;
-    }
 
 }
 
@@ -190,6 +177,14 @@ footer p{
 @media only screen and (min-width: 690px) {
     header h1{
         margin: 20px auto;
+    }
+
+    .temples{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        width: 90%;
+        margin: 0 auto;
     }
 
     .responsive li{
@@ -206,41 +201,7 @@ footer p{
         top: 6vw;
     }
   
-    #envelope{
-        font-size: 5vw;
-        height: 5vw;
-        width: 5.5vw;
-        padding-top: .5vw; 
-        right: 11vw;
-    }
-
-    #phone{
-        font-size: 5vw;
-        height: 5vw;
-        width: 5.5vw;
-        padding-top: .5vw; 
-    }
-
-    #amencontainer{
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    .amenities{
-        padding: 40px 5px;
-    }
+   
 } 
 
 
-@media only screen and (min-width: 690px) and (max-width: 890px) {
-
-#bookbutton{
-    margin-top: 12vw;
-}
-}
-
-@media only screen and (min-width: 891px) {
-
-    #bookbutton{
-        margin-top: 17vw;
-    }
-    }
