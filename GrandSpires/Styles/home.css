@@ -28,9 +28,9 @@ header{
 
 #mainlogo{
     position: absolute;
-    top: 20px;
+    top: 19vh;
     left: 50%;
-    transform: translate(-50%, -20px);
+    transform: translate(-50%, -30px);
 }
 
 #main-img{
